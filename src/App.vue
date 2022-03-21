@@ -1,100 +1,59 @@
 <template>
-  <q-layout view="lHh Lpr lFf">
-    <q-header elevated class="glossy">
-      <q-toolbar>
-        <q-btn
-          flat
-          dense
-          round
-          @click="leftDrawerOpen = !leftDrawerOpen"
-          aria-label="Menu"
-          icon="fas fa-bars"
-        />
-
-        <q-toolbar-title>
-          Quasar App
-        </q-toolbar-title>
-
-        <div>Quasar v{{ $q.version }}</div>
-      </q-toolbar>
-    </q-header>
-
-    <q-drawer
-      v-model="leftDrawerOpen"
-      show-if-above
-      bordered
-      class="bg-grey-2"
-    >
-      <q-list>
-        <q-item-label header>Essential Links</q-item-label>
-        <q-item clickable tag="a" target="_blank" href="https://quasar.dev">
-          <q-item-section avatar>
-            <q-icon name="fas fa-graduation-cap" />
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>Docs</q-item-label>
-            <q-item-label caption>quasar.dev</q-item-label>
-          </q-item-section>
-        </q-item>
-        <q-item clickable tag="a" target="_blank" href="https://github.com/quasarframework/">
-          <q-item-section avatar>
-            <q-icon name="fas fa-code" />
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>Github</q-item-label>
-            <q-item-label caption>github.com/quasarframework</q-item-label>
-          </q-item-section>
-        </q-item>
-        <q-item clickable tag="a" target="_blank" href="https://chat.quasar.dev">
-          <q-item-section avatar>
-            <q-icon name="fas fa-comments" />
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>Discord Chat Channel</q-item-label>
-            <q-item-label caption>chat.quasar.dev</q-item-label>
-          </q-item-section>
-        </q-item>
-        <q-item clickable tag="a" target="_blank" href="https://forum.quasar.dev">
-          <q-item-section avatar>
-            <q-icon name="far fa-clipboard" />
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>Forum</q-item-label>
-            <q-item-label caption>forum.quasar.dev</q-item-label>
-          </q-item-section>
-        </q-item>
-        <q-item clickable tag="a" target="_blank" href="https://twitter.com/quasarframework">
-          <q-item-section avatar>
-            <q-icon name="fab fa-twitter" />
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>Twitter</q-item-label>
-            <q-item-label caption>@quasarframework</q-item-label>
-          </q-item-section>
-        </q-item>
-      </q-list>
-    </q-drawer>
-
+  <q-layout view="hHh lpR fFf">
     <q-page-container>
-      <HelloWorld />
+      <div class="row justify-center bg-secondary q-pt-md">
+        <div class="column justify-center items-center text-center">
+          <q-img src="https://d1fdloi71mui9q.cloudfront.net/KxRt8cBTRM6Jx3ztHevB_1oGPzeL9m2O716Pa" width="100px" style="border-radius: 50%" />
+          <h6 class="q-my-lg">@joanasantostf</h6>
+          <p>Consultas; Ginásio Facial; Formação; Material Terapêutico; Livros</p>
+          <div class="q-my-md">
+            <q-list separator class="rounded-borders bg-white q-my-md q-px-lg" v-for="(link, idx) in links" :key="idx">
+              <q-item clickable v-ripple :href="link.href" target="_blank">
+                <q-item-section>{{ link.text }}</q-item-section>
+              </q-item>
+            </q-list>
+          </div>
+        </div>
+      </div>
     </q-page-container>
   </q-layout>
 </template>
 
 <script>
-import { ref } from 'vue'
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'LayoutDefault',
-
-  components: {
-    HelloWorld
-  },
-
-  setup () {
+  name: 'MainPage',
+  data() {
     return {
-      leftDrawerOpen: ref(false)
+      links: [
+        { 
+          text: 'Marcar consulta terapia da fala',
+          href: 'https://docs.google.com/forms/d/e/1FAIpQLSde4PYvvzfAGb3KuwzgxYBT3_hzn3AEP_ns84ECWJKpBm0DaQ/viewform'
+        },
+        { 
+          text: 'Marcar consulta ginásio facial',
+          href: 'https://docs.google.com/forms/d/e/1FAIpQLScaXiBm_-SdpmwofOpN1x0RrGdY_n7cKeQtNleN9-8imfb6GQ/viewform'
+        },
+        { 
+          text: 'Mentoria em paralisia facial',
+          href: 'https://docs.google.com/forms/d/e/1FAIpQLSfrKlnHiG9ANm3Ltwnlr_R4ME15S_JE5k5TO3tpgYwBW4Wfvw/viewform'
+        },
+        { 
+          text: 'Comprar livro "O meu filho já come" 12,59€',
+          href: 'https://publish.bookmundo.pt/site/?r=userwebsite/bookdetails&id=280902'
+        },
+        { 
+          text: 'Comprar ebook "O meu filho já come" 10,99€',
+          href: 'https://docs.google.com/forms/d/1HE7lyzCl0Oa8OdEpcZT5tcqB8zN0nVr0iqlA-jWO93U/prefill'
+        },
+        { 
+          text: 'Comprar caderno de atividades do natal 4,99€',
+          href: 'https://docs.google.com/forms/d/e/1FAIpQLSfID97m-1fFfCQWcVbdmbSejLwCWYYE-wfeC-GVyJkLCWHSwA/viewform'
+        },
+        { 
+          text: 'Comprar caderno de atividades do verão 4,99€',
+          href: 'https://docs.google.com/forms/d/e/1FAIpQLSfJk-cCAUJRCyOZ6EGw1r-nESDVs2Nue6zRGOjdtAIPyb0S3A/viewform'
+        }
+      ]
     }
   }
 }

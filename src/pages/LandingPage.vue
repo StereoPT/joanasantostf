@@ -1,10 +1,8 @@
 <template>
-  <q-page>
-    <div class="row justify-center bg-secondary q-pt-md">
-      <div class="column justify-center items-center text-center">
-        <q-img src="img/banner.png" height="250px" fit="scale-down" />
-        <h6 class="q-my-lg">@joanasantostf</h6>
-        <p>Consultas; Ginásio Facial; Formação; Material Terapêutico; Livros</p>
+  <q-page class="bg-secondary q-pt-md">
+    <TopBanner />
+    <div class="row q-mt-xl">
+      <div class="col-12 justify-center items-center text-center">
         <div class="q-my-md row justify-center items-start q-gutter-md">
           <q-card class="my-card" v-for="(link, idx) in links" :key="idx" style="max-width: 300px">
             <img :src="link.img" style="height: 250px; object-fit: cover;">
@@ -20,8 +18,13 @@
 </template>
 
 <script>
+import TopBanner from '../components/TopBanner.vue'
+
 export default {
   name: 'LandingPage',
+  components: {
+    TopBanner
+  },
   data() {
     return {
       links: [
@@ -32,17 +35,20 @@ export default {
           img: 'img/consulta.png'
         },
         { 
-          text: 'Marcar consulta ginásio facial',
+          text: 'Marcar consulta',
+          subtext: 'Ginásio facial',
           href: 'https://docs.google.com/forms/d/e/1FAIpQLScaXiBm_-SdpmwofOpN1x0RrGdY_n7cKeQtNleN9-8imfb6GQ/viewform',
           img: 'img/ginasio.png'
         },
         { 
-          text: 'Mentoria em paralisia facial',
+          text: 'Mentoria',
+          subtext: 'Paralisia facial',
           href: 'https://docs.google.com/forms/d/e/1FAIpQLSfrKlnHiG9ANm3Ltwnlr_R4ME15S_JE5k5TO3tpgYwBW4Wfvw/viewform',
           img: 'img/mentoria.png'
         },
         { 
-          text: 'Comprar livro "O meu filho já come" 12,59€',
+          text: '"O meu filho já come"',
+          subtext: 'Preço: 12,59€',
           href: 'https://publish.bookmundo.pt/site/?r=userwebsite/bookdetails&id=280902',
           img: 'img/livros.png'
         }

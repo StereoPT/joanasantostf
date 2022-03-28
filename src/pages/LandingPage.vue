@@ -1,29 +1,27 @@
 <template>
-  <q-layout view="hHh lpR fFf">
-    <q-page-container>
-      <div class="row justify-center bg-secondary q-pt-md">
-        <div class="column justify-center items-center text-center">
-          <q-img src="img/banner.png" height="250px" fit="scale-down" />
-          <h6 class="q-my-lg">@joanasantostf</h6>
-          <p>Consultas; Ginásio Facial; Formação; Material Terapêutico; Livros</p>
-          <div class="q-my-md row justify-center items-start q-gutter-md">
-            <q-card class="my-card" v-for="(link, idx) in links" :key="idx" style="max-width: 300px">
-              <img :src="link.img" style="height: 250px; object-fit: cover;">
-              <q-card-section>
-                <div class="text-h6">{{ link.text }}</div>
-                <div class="text-subtitle2">{{ link.subtext }}</div>
-              </q-card-section>
-            </q-card>
-          </div>
+  <q-page>
+    <div class="row justify-center bg-secondary q-pt-md">
+      <div class="column justify-center items-center text-center">
+        <q-img src="img/banner.png" height="250px" fit="scale-down" />
+        <h6 class="q-my-lg">@joanasantostf</h6>
+        <p>Consultas; Ginásio Facial; Formação; Material Terapêutico; Livros</p>
+        <div class="q-my-md row justify-center items-start q-gutter-md">
+          <q-card class="my-card" v-for="(link, idx) in links" :key="idx" style="max-width: 300px">
+            <img :src="link.img" style="height: 250px; object-fit: cover;">
+            <q-card-section>
+              <div class="text-h6">{{ link.text }}</div>
+              <div class="text-subtitle2">{{ link.subtext }}</div>
+            </q-card-section>
+          </q-card>
         </div>
       </div>
-    </q-page-container>
-  </q-layout>
+    </div>
+  </q-page>
 </template>
 
 <script>
 export default {
-  name: 'MainPage',
+  name: 'LandingPage',
   data() {
     return {
       links: [
@@ -53,5 +51,3 @@ export default {
   }
 }
 </script>
-
-<style scoped> </style>

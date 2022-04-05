@@ -1,6 +1,6 @@
 <template>
-  <header class="banner">
-    <q-img class="fixed-top-left q-ml-lg q-mt-md gt-xs" src="img/banner.png" height="250px" width="250px" fit="scale-down" />
+  <header class="banner q-pt-md bg-secondary">
+    <q-img class="fixed-top-left q-ml-lg gt-xs" src="img/banner.png" height="250px" width="250px" fit="scale-down" />
     <div class="row justify-center">
       <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
         <h4 class="text-weight-bold q-mb-sm text-primary">Consultório</h4>

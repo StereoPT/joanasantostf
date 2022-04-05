@@ -1,7 +1,7 @@
 <template>
-  <q-page class="bg-secondary q-pt-md">
+  <q-page>
     <TopBanner />
-    <div class="row q-mt-xl">
+    <div class="row q-py-xl">
       <div class="col-12 justify-center items-center text-center">
         <div class="q-my-md row justify-center items-start q-gutter-md">
           <q-card class="my-card" v-for="(link, idx) in links" :key="idx" style="max-width: 300px">

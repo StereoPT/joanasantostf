@@ -2,8 +2,8 @@
   <div class="row q-mt-xs q-mb-xl q-mx-xl justify-center">
     <div class="col-md-6">
       <h3 class="text-bold text-primary q-mb-sm">Sobre mim:</h3>
-      <ul class="q-px-md" style="font-size: 1.2em; list-style-type: none;">
-        <li>
+      <ul class="q-px-md q-gutter-y-md" style="font-size: 1.2em; list-style-type: none;">
+        <li class="q-pt-md">
           Sê bem-vindo ao meu Consultório! O meu nome é Joana Santos e sou natural de Monte Real, Leiria. Sou Terapeuta da Fala Especializada em Motricidade Orofacial. Costumo dizer que sou Terapeuta desde os 8 anos, pois foi mesmo esta a profissão que escolhi quando, na escola primária, me pediram um texto intitulado "Quando for grande quero ser...". Longe estava de saber, que o meu futuro estava tão bem escolhido!
         </li>
         <li>
@@ -24,8 +24,8 @@
     </div>
     <div class="col-md-4">
       <h3 class="text-bold text-primary q-mb-sm">Experiência em:</h3>
-      <ul class="q-px-md" style="font-size: 1.2em; list-style-type: none;">
-        <li>Reabilitação Pós-AVC (Afasia, disfagia e disartria)</li>
+      <ul class="q-px-md q-gutter-y-sm" style="font-size: 1.2em; list-style-type: none;">
+        <li class="q-pt-md">Reabilitação Pós-AVC (Afasia, disfagia e disartria)</li>
         <li>Perturbação do Espectro do Autismo</li>
         <li>Atraso do Desenvolvimento</li>
         <li>Paralisia Facial</li>

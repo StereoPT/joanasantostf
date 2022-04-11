@@ -1,7 +1,40 @@
 <template>
-  <div class="row q-py-lg">
-    <div class="col-12 justify-center items-center text-center">
-      <h2>Página Inicial</h2>
+  <div class="row q-mt-xs q-mb-xl q-mx-xl justify-center">
+    <div class="col-md-6">
+      <h3 class="text-bold text-primary q-mb-sm">Sobre mim:</h3>
+      <ul class="q-px-md" style="font-size: 1.2em; list-style-type: none;">
+        <li>
+          Sê bem-vindo ao meu Consultório! O meu nome é Joana Santos e sou natural de Monte Real, Leiria. Sou Terapeuta da Fala Especializada em Motricidade Orofacial. Costumo dizer que sou Terapeuta desde os 8 anos, pois foi mesmo esta a profissão que escolhi quando, na escola primária, me pediram um texto intitulado "Quando for grande quero ser...". Longe estava de saber, que o meu futuro estava tão bem escolhido!
+        </li>
+        <li>
+          Mas o que é ser Terapeuta da Fala? Quer dizer que trabalho com bebés, crianças, adultos e idosos, na reabilitação ou melhoria das competências de respiração, mastigação, deglutição e fala. Trabalho, igualmente, as áreas da linguagem, reabilitação vocal, leitura e escrita. Mais recentemente, iniciei o meu trabalho na área da Estética Facial - uma área relativamente recente no nosso país, mas muito promissora.
+        </li>
+        <li>
+          Para além das Consultas de Terapia da Fala, sou co-autora do livro "O meu filho já come" (2021) e participei em vários estudos científicos, nos últimos anos. Dou ainda asas à minha paixão pela Terapia da Fala, dando formações, aulas e mentorias e mantenho alguns projetos e serviços - workshops, consultadoria e curadoria de brinquedos e materiais terapêuticos.
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-3 flex justify-center items-center">
+      <q-img src="img/sobre-mim.png" height="320px" width="320px" fit="scale-down" position="50% 50%" style="border-radius: 50%"/>
+    </div>
+  </div>
+  <div class="row q-my-xl q-mx-xl justify-center">
+    <div class="col-md-3 flex justify-center items-center">
+      <q-img src="img/sobre-mim.png" height="320px" width="320px" fit="scale-down" position="50% 50%" style="border-radius: 50%"/>
+    </div>
+    <div class="col-md-4">
+      <h3 class="text-bold text-primary q-mb-sm">Experiência em:</h3>
+      <ul class="q-px-md" style="font-size: 1.2em; list-style-type: none;">
+        <li>Reabilitação Pós-AVC (Afasia, disfagia e disartria)</li>
+        <li>Perturbação do Espectro do Autismo</li>
+        <li>Atraso do Desenvolvimento</li>
+        <li>Paralisia Facial</li>
+        <li>Alterações de mastigação com impacto ortodôntico</li>
+        <li>Linguagem</li>
+        <li>Fala (articulação dos sons da fala)</li>
+        <li>Dificuldades de Leitura e Escrita</li>
+        <li>Reabilitação vocal (nódulos, pós-cirúrgico, etc)</li>
+      </ul>
     </div>
   </div>
 </template>

@@ -13,11 +13,11 @@
         <q-icon left size="xs" name="home" />
         <div>Inicio</div>
       </q-btn>
-      <q-btn class="col-auto q-mb-md" color="primary" to="marcacoes" size="sm">
+      <q-btn class="col-auto q-mb-md" color="primary" to="/marcacoes" size="sm">
         <q-icon left size="xs" name="calendar_month" />
         <div>Marcações</div>
       </q-btn>
-      <q-btn class="col-auto q-mb-md" color="primary" to="loja" size="sm">
+      <q-btn class="col-auto q-mb-md" color="primary" to="/loja" size="sm">
         <q-icon left size="xs" name="shopping_cart" />
         <div>Loja</div>
       </q-btn>

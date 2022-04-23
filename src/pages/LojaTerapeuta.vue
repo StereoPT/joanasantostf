@@ -35,10 +35,10 @@ export default {
   name: 'Loja',
   methods: {
     goToMOF() {
-      this.$router.push('/');
+      this.$router.push({ name: 'loja.mof' });
     },
     goToOutros() {
-      this.$router.push('/marcacoes');
+      this.$router.push({ name: 'loja.outros' });
     }
   }
 }

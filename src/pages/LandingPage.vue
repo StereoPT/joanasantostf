@@ -1,8 +1,12 @@
 <template>
   <div class="row q-mt-xs q-mb-xl q-mx-xl justify-center">
+      <div class="col-md-3 flex justify-center items-center">
+        <div class="absolute img-circle"></div>
+        <q-img class="q-mt-sm" src="img/sobre-mim-2.png" height="250px" width="250px" fit="scale-down" position="50% 50%" style="border-radius: 45%"/>
+      </div>
     <div class="col-md-6">
-      <h3 class="text-bold text-primary q-mb-sm">Sobre mim:</h3>
-      <ul class="q-px-md q-gutter-y-md" style="font-size: 1.2em; list-style-type: none;">
+      <h4 class="text-bold text-primary q-mb-sm">Sobre mim:</h4>
+      <ul class="q-px-sm q-gutter-y-md" style="font-size: 1.15em; list-style-type: none;">
         <li class="q-pt-md">
           Sê bem-vindo ao meu Consultório! O meu nome é Joana Santos e sou natural de Monte Real, Leiria. Sou Terapeuta da Fala Especializada em Motricidade Orofacial. Costumo dizer que sou Terapeuta desde os 8 anos, pois foi mesmo esta a profissão que escolhi quando, na escola primária, me pediram um texto intitulado "Quando for grande quero ser...". Longe estava de saber, que o meu futuro estava tão bem escolhido!
         </li>
@@ -14,17 +18,14 @@
         </li>
       </ul>
     </div>
-    <div class="col-md-3 flex justify-center items-center">
-      <q-img src="img/sobre-mim.png" height="320px" width="320px" fit="scale-down" position="50% 50%" style="border-radius: 50%"/>
-    </div>
   </div>
   <div class="row q-my-xl q-mx-xl justify-center">
     <div class="col-md-3 flex justify-center items-center">
-      <q-img src="img/sobre-mim.png" height="320px" width="320px" fit="scale-down" position="50% 50%" style="border-radius: 50%"/>
+      <q-img src="img/sobre-mim.png" height="250px" width="250px" fit="scale-down" position="50% 50%" style="border-radius: 45%"/>
     </div>
     <div class="col-md-4">
-      <h3 class="text-bold text-primary q-mb-sm">Experiência em:</h3>
-      <ul class="q-px-md q-gutter-y-sm" style="font-size: 1.2em; list-style-type: none;">
+      <h4 class="text-bold text-primary q-mb-sm">Experiência em:</h4>
+      <ul class="q-px-sm q-gutter-y-sm" style="font-size: 1.15em;">
         <li class="q-pt-md">Reabilitação Pós-AVC (Afasia, disfagia e disartria)</li>
         <li>Perturbação do Espectro do Autismo</li>
         <li>Atraso do Desenvolvimento</li>
@@ -44,3 +45,12 @@ export default {
   name: 'LandingPage'
 }
 </script>
+
+<style scoped>
+  .img-circle {
+    background: #6A5062;
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+  }
+</style>

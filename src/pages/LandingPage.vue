@@ -14,7 +14,10 @@
           Mas o que é ser Terapeuta da Fala? Quer dizer que trabalho com bebés, crianças, adultos e idosos, na reabilitação ou melhoria das competências de respiração, mastigação, deglutição e fala. Trabalho, igualmente, as áreas da linguagem, reabilitação vocal, leitura e escrita. Mais recentemente, iniciei o meu trabalho na área da Estética Facial - uma área relativamente recente no nosso país, mas muito promissora.
         </li>
         <li>
-          Para além das Consultas de Terapia da Fala, sou co-autora do livro "O meu filho já come" (2021) e participei em vários estudos científicos, nos últimos anos. Dou ainda asas à minha paixão pela Terapia da Fala, dando formações, aulas e mentorias e mantenho alguns projetos e serviços - workshops, consultadoria e curadoria de brinquedos e materiais terapêuticos.
+          Para além de Terapeuta da Fala, sou também autora de livros sobre a alimentação infantil e vários artigos científicos da área. No últimos anos, dedico, também, parte do meu tempo a formar e ensinar acerca da minha paixão pela Terapia da Fala e a Motricidade Orofacial, através de Mentorias, Aulas e Workshops. Recentemente, lancei a "Loja do Terapeuta" - uma loja online que disponibiliza materiais e recursos terapêuticos a Terapeutas da Fala.
+        </li>
+        <li>
+          No meu Consultório podes ainda encontrar consultas de outras valências: Nutrição, Psicologia e Pilates Clínico.
         </li>
       </ul>
     </div>

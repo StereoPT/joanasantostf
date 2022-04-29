@@ -3,7 +3,7 @@
     <h4 class="text-bold text-primary q-my-md">{{ title }}</h4>
   </div>
   <div class="row q-mt-lg q-mx-md justify-center">
-    <div class="q-gutter-x-md">
+    <div class="q-gutter-md">
       <q-btn color="primary" label="Como comprar" size="sm" @click="comoComprar()">
         <q-icon right size="xs" name="question_mark" />
       </q-btn>
@@ -28,9 +28,12 @@
                 <q-item-label caption>Referência: {{ material.referencia }}</q-item-label>
               </q-item-section>
 
-              <q-item-section side>
+              <q-item-section side v-if="material.preco">
                 <q-item-label caption>{{ material.preco }} €</q-item-label>
                 <q-item-label caption>(+ portes)</q-item-label>
+              </q-item-section>
+              <q-item-section side v-else>
+                <q-item-label caption>Brevemente disponível</q-item-label>
               </q-item-section>
             </q-item>
           </q-card>

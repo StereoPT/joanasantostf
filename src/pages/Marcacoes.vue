@@ -3,8 +3,8 @@
     <h4 class="text-bold text-primary q-my-md">Marcações</h4>
   </div>
   <div class="row justify-center items-start q-gutter-md">
-    <q-card class="my-card text-center" v-for="(link, idx) in links" :key="idx">
-      <img :src="link.img" style="height: 210px; object-fit: cover;">
+    <q-card class="col-xs-6 col-sm-4 col-md-3 col-lg-2 text-center" v-for="(link, idx) in links" :key="idx">
+      <q-img :src="link.img" style="height: 210px" fit="cover" />
       <q-card-section>
         <div class="text-h6">{{ link.text }}</div>
         <div class="text-subtitle2">{{ link.subtext }}</div>
@@ -62,8 +62,4 @@ export default {
 }
 </script>
 
-<style scoped>
-  .my-card {
-    min-width: 250px;
-  }
-</style>
+<style scoped> </style>

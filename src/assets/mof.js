@@ -191,9 +191,9 @@ export const mof = [
   {
     referencia: 'LT074',
     nome: 'Tubo Ressonância',
-    preco: 'xx,xx',
+    preco: '',
     imagem: '74.png',
-    disponivel: false
+    disponivel: true
   },
   {
     referencia: 'LT075',

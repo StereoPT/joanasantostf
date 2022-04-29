@@ -30,6 +30,8 @@
       <h4 class="text-bold text-primary q-mb-sm">Experiência em:</h4>
       <ul class="q-px-sm q-gutter-y-sm" style="font-size: 1.15em;">
         <li class="q-pt-md">Reabilitação Pós-AVC (Afasia, disfagia e disartria)</li>
+        <li>Doenças neurológicas e do neurodesenvolvimento</li>
+        <li>Afasia, Disartria e Disfagia</li>
         <li>Perturbação do Espectro do Autismo</li>
         <li>Atraso do Desenvolvimento</li>
         <li>Paralisia Facial</li>

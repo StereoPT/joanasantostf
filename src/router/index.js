@@ -1,6 +1,7 @@
 import { createRouter, createWebHashHistory } from 'vue-router';
 
-import { mof, outros } from '../assets/lojas';
+import { mof } from '../assets/mof';
+import { outros } from '../assets/outros';
 
 const routes = [
   {

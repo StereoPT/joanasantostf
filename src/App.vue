@@ -1,10 +1,8 @@
 <template>
   <q-layout view="hHh lpR fFf">
+    <TopBanner />
     <q-page-container>
-      <q-page>
-        <TopBanner />
-        <router-view></router-view>
-      </q-page>
+      <router-view></router-view>
     </q-page-container>
   </q-layout>
 </template>

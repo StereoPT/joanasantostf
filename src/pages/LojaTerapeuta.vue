@@ -1,39 +1,72 @@
 <template>
-  <div class="row q-mt-lg q-mx-md justify-center">
-    <h4 class="text-bold text-primary q-my-md">Loja do Terapeuta</h4>
-  </div>
-  <div class="row justify-center">
-    <img src="img/loja-terapeuta.jpeg" style="height: 250px">
-  </div>
-  <div class="row justify-center q-gutter-md q-my-lg">
-    <q-card v-ripple class="col-xs-5 my-card cursor-pointer" @click="goToMOF()">
-      <q-item>
-        <q-item-section>
-          <q-item-label class="text-center text-bold">Materiais MOF</q-item-label>
-        </q-item-section>
-      </q-item>
-      <q-img src="img/materiais-MOF.jpeg" style="max-height: 250px; object-fit: cover;" position="50% 30%" />
-    </q-card>
-    <q-card v-ripple class="col-xs-5 my-card cursor-pointer" @click="goToOutros()">
-      <q-item>
-        <q-item-section>
-          <q-item-label class="text-center text-bold">Outros Materiais</q-item-label>
-        </q-item-section>
-      </q-item>
-      <q-img src="img/materiais-outros.jpeg" style="max-height: 250px; object-fit: cover;" position="50% 50%" />
-    </q-card>
-  </div>
+  <q-page padding>
+    <div class="row q-mb-lg q-mx-md justify-center">
+      <h4 class="text-bold text-primary q-my-md">Loja do Terapeuta</h4>
+    </div>
+    <div class="row q-my-lg justify-center">
+      <img src="img/loja-terapeuta.jpeg" style="height: 250px">
+    </div>
+    <div class="row justify-center q-gutter-md">
+      <template v-for="(card, idx) in cards" :key="idx">
+        <q-card v-ripple class="col-xs-5 my-card cursor-pointer" @click="card.fn()" v-if="card.display">
+          <q-item>
+            <q-item-section>
+              <q-item-label class="text-center text-bold">{{ card.name }}</q-item-label>
+            </q-item-section>
+          </q-item>
+          <q-img :src="card.img.path" style="max-height: 250px;" fit="cover" :position="card.img.position" />
+        </q-card>
+      </template>
+    </div>
+  </q-page>
 </template>
 
 <script>
 export default {
   name: 'Loja',
+  title: 'Joana Santos - Loja do Terapeuta',
+  data() {
+    return {
+      cards: [
+        {
+          name: 'Materiais MOF',
+          display: true,
+          fn: this.goToMOF,
+          img: {
+            path: 'img/materiais-MOF.jpeg',
+            position: '50% 30%'
+          }
+        },
+        {
+          name: 'Outros Materiais',
+          display: true,
+          fn: this.goToOutros,
+          img: {
+            path: 'img/materiais-outros.jpeg',
+            position: '50% 30%'
+          }
+        },
+        {
+          name: 'Fardas Doworkwer',
+          display: false,
+          fn: this.goToDoworkwer,
+          img: {
+            path: 'img/scrubs.jpeg',
+            position: '50% 0'
+          }
+        }
+      ]
+    }
+  },
   methods: {
     goToMOF() {
       this.$router.push({ name: 'loja.mof' });
     },
     goToOutros() {
       this.$router.push({ name: 'loja.outros' });
+    },
+    goToDoworkwer() {
+      
     }
   }
 }

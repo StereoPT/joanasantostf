@@ -1,46 +1,48 @@
 <template>
-  <div class="row q-mt-lg q-mx-md justify-center">
-    <h4 class="text-bold text-primary q-my-md">{{ title }}</h4>
-  </div>
-  <div class="row q-mt-lg q-mx-md justify-center">
-    <div class="q-gutter-md">
-      <q-btn color="primary" label="Como comprar" size="sm" @click="comoComprar()">
-        <q-icon right size="xs" name="question_mark" />
-      </q-btn>
-      <q-btn color="primary" label="Comprar aqui" size="sm" :href="this.comprarAqui">
-        <q-icon right size="xs" name="shopping_cart" />
-      </q-btn>
-      <q-btn color="primary" label="Voltar atrás" size="sm" to="/loja">
-        <q-icon right size="xs" name="arrow_back" />
-      </q-btn>
+  <q-page padding>
+    <div class="row q-mx-md justify-center">
+      <h4 class="text-bold text-primary q-my-md">{{ title }}</h4>
     </div>
-  </div>
-  <div class="row q-my-lg">
-    <div class="col q-mx-lg">
-      <div class="row justify-center q-gutter-lg">
-        <template v-for="material in materiais" :key="material.referencia">
-          <q-card class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2" v-if="material.disponivel">
-            <q-img :src="`loja/${material.imagem}`" style="height: 250px" fit="scale-down" />
-
-            <q-item>
-              <q-item-section>
-                <q-item-label class="text-body1">{{ material.nome }}</q-item-label>
-                <q-item-label caption>Referência: {{ material.referencia }}</q-item-label>
-              </q-item-section>
-
-              <q-item-section side v-if="material.preco">
-                <q-item-label caption>{{ material.preco }} €</q-item-label>
-                <q-item-label caption>(+ portes)</q-item-label>
-              </q-item-section>
-              <q-item-section side v-else>
-                <q-item-label caption>Brevemente disponível</q-item-label>
-              </q-item-section>
-            </q-item>
-          </q-card>
-        </template>
+    <div class="row q-mt-lg q-mx-md justify-center">
+      <div class="q-gutter-md">
+        <q-btn color="primary" label="Como comprar" size="sm" @click="comoComprar()">
+          <q-icon right size="xs" name="question_mark" />
+        </q-btn>
+        <q-btn color="primary" label="Comprar aqui" size="sm" :href="this.comprarAqui">
+          <q-icon right size="xs" name="shopping_cart" />
+        </q-btn>
+        <q-btn color="primary" label="Voltar atrás" size="sm" to="/loja">
+          <q-icon right size="xs" name="arrow_back" />
+        </q-btn>
       </div>
     </div>
-  </div>
+    <div class="row q-mt-lg">
+      <div class="col q-mx-lg">
+        <div class="row justify-center q-gutter-lg">
+          <template v-for="material in materiais" :key="material.referencia">
+            <q-card class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2" v-if="material.disponivel">
+              <q-img :src="`loja/${material.imagem}`" style="height: 250px" fit="scale-down" />
+
+              <q-item>
+                <q-item-section>
+                  <q-item-label class="text-body1">{{ material.nome }}</q-item-label>
+                  <q-item-label caption>Referência: {{ material.referencia }}</q-item-label>
+                </q-item-section>
+
+                <q-item-section side v-if="material.preco">
+                  <q-item-label caption>{{ material.preco }} €</q-item-label>
+                  <q-item-label caption>(+ portes)</q-item-label>
+                </q-item-section>
+                <q-item-section side v-else>
+                  <q-item-label caption>Brevemente disponível</q-item-label>
+                </q-item-section>
+              </q-item>
+            </q-card>
+          </template>
+        </div>
+      </div>
+    </div>
+  </q-page>
 </template>
 
 <script>

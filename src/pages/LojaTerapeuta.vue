@@ -48,7 +48,7 @@ export default {
         },
         {
           name: 'Fardas Doworkwer',
-          display: false,
+          display: true,
           fn: this.goToDoworkwer,
           img: {
             path: 'img/scrubs.jpeg',
@@ -66,7 +66,7 @@ export default {
       this.$router.push({ name: 'loja.outros' });
     },
     goToDoworkwer() {
-      
+      window.open("https://www.instagram.com/doworkwear/", "_blank");
     }
   }
 }

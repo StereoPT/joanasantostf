@@ -1,5 +1,5 @@
 <template>
-  <q-card class="col-xs-6 col-sm-4 col-md-3 col-lg-3 text-center" v-if="marcacao.display">
+  <q-card class="col-xs-6 col-sm-4 col-md-3 col-lg-2 text-center" v-if="marcacao.display">
     <q-img :src="marcacao.img" style="height: 210px" fit="cover" />
     <q-card-section>
       <div class="text-h6">{{ marcacao.text }}</div>

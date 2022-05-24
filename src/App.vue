@@ -19,7 +19,7 @@
       </q-toolbar>
     </q-header>
 
-    <q-drawer show-if-above v-model="drawerOpen" side="left" elevated overlay>
+    <q-drawer v-model="drawerOpen" side="left" elevated overlay>
       <q-scroll-area class="fit">
         <SidebarItem :link="{name: 'landingPage'}" :icon="'home'" :label="'Inicio'" />
         <SidebarItem :link="{name: 'marcacoes'}" :icon="'calendar_month'" :label="'Marcações'" />

@@ -7,24 +7,20 @@
       <img src="img/loja-terapeuta.jpeg" style="height: 250px">
     </div>
     <div class="row justify-center q-gutter-md">
-      <template v-for="(card, idx) in cards" :key="idx">
-        <q-card v-ripple class="col-xs-5 my-card cursor-pointer" @click="card.fn()" v-if="card.display">
-          <q-item>
-            <q-item-section>
-              <q-item-label class="text-center text-bold">{{ card.name }}</q-item-label>
-            </q-item-section>
-          </q-item>
-          <q-img :src="card.img.path" style="max-height: 250px;" fit="cover" :position="card.img.position" />
-        </q-card>
-      </template>
+      <LojasCard v-for="(card, idx) in cards" :key="idx" :card="card"/>
     </div>
   </q-page>
 </template>
 
 <script>
+import LojasCard from '../components/LojasCard.vue';
+
 export default {
   name: 'Loja',
   title: 'Joana Santos - Loja do Terapeuta',
+  components: {
+    LojasCard
+  },
   data() {
     return {
       cards: [
@@ -72,8 +68,4 @@ export default {
 }
 </script>
 
-<style scoped>
-  .my-card {
-    max-width: 310px;
-  }
-</style>
+<style scoped> </style>

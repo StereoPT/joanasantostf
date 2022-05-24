@@ -55,7 +55,7 @@ export default {
   data() {
     return {
       comprarAqui: `
-mailto:joanapsantos@outlook.pt?&
+mailto:joanapsantos1992@gmail.com?&
 subject=Encomenda Loja do Terapeuta&
 body=A minha encomenda da Loja do Terapeuta%0D%0A%0D%0A
 Nome:%0D%0A

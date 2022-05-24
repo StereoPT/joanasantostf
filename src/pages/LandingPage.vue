@@ -1,5 +1,6 @@
 <template>
-  <q-page padding>
+  <q-page>
+    <TopBanner />
     <div class="row q-mb-xl q-mx-xl justify-center">
         <div class="col-md-3 flex justify-center items-center">
           <div class="absolute img-circle"></div>
@@ -48,9 +49,14 @@
 </template>
 
 <script>
+import TopBanner from '../components/TopBanner.vue';
+
 export default {
   name: 'LandingPage',
   title: 'Joana Santos - Página Inicial',
+  components: {
+    TopBanner
+  },
 }
 </script>
 

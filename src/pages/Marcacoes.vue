@@ -4,7 +4,7 @@
       <h4 class="text-bold text-primary q-my-md">Marcações</h4>
     </div>
     <div class="row justify-center items-start q-gutter-md">
-      <q-card class="col-xs-6 col-sm-4 col-md-3 col-lg-2 text-center" v-for="(link, idx) in links" :key="idx">
+      <q-card class="col-xs-6 col-sm-4 col-md-3 col-lg-3 text-center" v-for="(link, idx) in links" :key="idx">
         <q-img :src="link.img" style="height: 210px" fit="cover" />
         <q-card-section>
           <div class="text-h6">{{ link.text }}</div>
@@ -59,7 +59,7 @@ export default {
   },
   computed: {
     mailTo() {
-      return `mailto:joanapsantos@outlook.pt?&subject=${this.nome} - ${this.assunto}&body=${this.mensagem}`;
+      return `mailto:joanapsantos1992@gmail.com?&subject=${this.nome} - ${this.assunto}&body=${this.mensagem}`;
     }
   }
 }

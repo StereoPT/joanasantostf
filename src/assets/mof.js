@@ -1,5 +1,12 @@
 export const mof = [
   {
+    referencia: 'LT009',
+    nome: 'Exercitador de língua (Kit 3 Peças)',
+    preco: '17,50',
+    imagem: '9.png',
+    disponivel: true
+  },
+  {
     referencia: 'LT001',
     nome: 'Exercitador facial 1/3 inferior',
     preco: '8,50',
@@ -7,17 +14,31 @@ export const mof = [
     disponivel: true
   },
   {
+    referencia: 'LT016',
+    nome: 'Massajador com vibração',
+    preco: '13,20',
+    imagem: '16.png',
+    disponivel: true
+  },
+  {
+    referencia: 'LT012',
+    nome: 'Dedeira de silicone',
+    preco: '4,50',
+    imagem: '12.png',
+    disponivel: true
+  },
+  {
+    referencia: 'LT023',
+    nome: 'Escova Propriocetiva',
+    preco: '6,00',
+    imagem: '23.png',
+    disponivel: true
+  },
+  {
     referencia: 'LT002',
     nome: 'Espelho intra-oral',
     preco: '3,50',
     imagem: '2.png',
-    disponivel: true
-  },
-  {
-    referencia: 'LT003',
-    nome: 'Massajador facial duplo',
-    preco: '6,50',
-    imagem: '3.png',
     disponivel: true
   },
   {
@@ -32,7 +53,7 @@ export const mof = [
     nome: 'Modelo de Boca',
     preco: '10,00',
     imagem: '5.png',
-    disponivel: true
+    disponivel: false
   },
   {
     referencia: 'LT006',
@@ -56,10 +77,24 @@ export const mof = [
     disponivel: true
   },
   {
-    referencia: 'LT009',
-    nome: 'Exercitador de língua (1 peça)',
+    referencia: 'LT079',
+    nome: 'Exercitador de língua (curvo)',
     preco: '6,10',
-    imagem: '9.png',
+    imagem: '75.jpeg',
+    disponivel: true
+  },
+  {
+    referencia: 'LT080',
+    nome: 'Exercitador de língua (horizontal)',
+    preco: '6,10',
+    imagem: '76.jpeg',
+    disponivel: true
+  },
+  {
+    referencia: 'LT081',
+    nome: 'Exercitador de língua (vertical)',
+    preco: '6,10',
+    imagem: '77.jpeg',
     disponivel: true
   },
   {
@@ -74,14 +109,7 @@ export const mof = [
     nome: 'Exercitador musc. peri-orbicular',
     preco: '6,00',
     imagem: '11.png',
-    disponivel: true
-  },
-  {
-    referencia: 'LT012',
-    nome: 'Dedeira de silicone',
-    preco: '4,50',
-    imagem: '12.png',
-    disponivel: true
+    disponivel: false
   },
   {
     referencia: 'LT013',
@@ -105,13 +133,6 @@ export const mof = [
     disponivel: true
   },
   {
-    referencia: 'LT016',
-    nome: 'Massajador com vibração',
-    preco: '13,20',
-    imagem: '16.png',
-    disponivel: true
-  },
-  {
     referencia: 'LT018',
     nome: 'Modelo de língua',
     preco: '6,75',
@@ -131,13 +152,6 @@ export const mof = [
     preco: '15,00',
     imagem: '22.png',
     disponivel: false
-  },
-  {
-    referencia: 'LT023',
-    nome: 'Escova Propriocetiva',
-    preco: '6,00',
-    imagem: '23.png',
-    disponivel: true
   },
   {
     referencia: 'LT024',
@@ -165,27 +179,6 @@ export const mof = [
     nome: 'Cotonetes propriocetivos',
     preco: '5,00',
     imagem: '69.jpeg',
-    disponivel: true
-  },
-  {
-    referencia: 'LT070',
-    nome: 'Chupetas',
-    preco: '2,00',
-    imagem: '70.png',
-    disponivel: true
-  },
-  {
-    referencia: 'LT072',
-    nome: 'Bola 90g',
-    preco: '1,50',
-    imagem: '72.png',
-    disponivel: true
-  },
-  {
-    referencia: 'LT073',
-    nome: 'Bola anti-stress emoji',
-    preco: '1,50',
-    imagem: '73.png',
     disponivel: true
   },
   {

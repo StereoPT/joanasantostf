@@ -3,7 +3,7 @@
     <div class="row q-mx-md justify-center">
       <h4 class="text-bold text-primary q-my-md">{{ title }}</h4>
     </div>
-    <div class="row q-mt-lg q-mx-md justify-center">
+    <div class="row q-mt-lg q-mx-md justify-center text-center">
       <div class="q-gutter-md">
         <q-btn color="primary" label="Como comprar" size="sm" @click="comoComprar()">
           <q-icon right size="xs" name="question_mark" />
@@ -19,26 +19,7 @@
     <div class="row q-mt-lg">
       <div class="col q-mx-lg">
         <div class="row justify-center q-gutter-lg">
-          <template v-for="material in materiais" :key="material.referencia">
-            <q-card class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2" v-if="material.disponivel">
-              <q-img :src="`loja/${material.imagem}`" style="height: 250px" fit="scale-down" />
-
-              <q-item>
-                <q-item-section>
-                  <q-item-label class="text-body1">{{ material.nome }}</q-item-label>
-                  <q-item-label caption>Referência: {{ material.referencia }}</q-item-label>
-                </q-item-section>
-
-                <q-item-section side v-if="material.preco">
-                  <q-item-label caption>{{ material.preco }} €</q-item-label>
-                  <q-item-label caption>(+ portes)</q-item-label>
-                </q-item-section>
-                <q-item-section side v-else>
-                  <q-item-label caption>Brevemente disponível</q-item-label>
-                </q-item-section>
-              </q-item>
-            </q-card>
-          </template>
+          <MaterialCard v-for="material in materiais" :key="material.referencia" :material="material" />
         </div>
       </div>
     </div>
@@ -46,8 +27,13 @@
 </template>
 
 <script>
+import MaterialCard from '../components/MaterialCard.vue';
+
 export default {
   name: 'Dynamic Loja',
+  components: {
+    MaterialCard
+  },
   props: {
     title: String,
     materiais: Array,
@@ -55,7 +41,7 @@ export default {
   data() {
     return {
       comprarAqui: `
-mailto:joanapsantos@outlook.pt?&
+mailto:joanapsantos1992@gmail.com?&
 subject=Encomenda Loja do Terapeuta&
 body=A minha encomenda da Loja do Terapeuta%0D%0A%0D%0A
 Nome:%0D%0A
@@ -84,6 +70,4 @@ Indique a referência do(s) produto(s) pretendido(s), seguido da quantidade:%0D%
 }
 </script>
 
-<style scoped>
-  
-</style>
+<style scoped> </style>

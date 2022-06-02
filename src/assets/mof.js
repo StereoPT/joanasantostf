@@ -109,7 +109,7 @@ export const mof = [
     nome: 'Exercitador musc. peri-orbicular',
     preco: '6,00',
     imagem: '11.png',
-    disponivel: false
+    disponivel: true
   },
   {
     referencia: 'LT013',

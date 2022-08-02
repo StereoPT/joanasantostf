@@ -37,6 +37,11 @@ const routes = [
       materiais: outros
     }
   },
+  {
+    path: '/stocks',
+    name: 'stocks',
+    component: () => import('../pages/Stocks.vue')
+  }
 ];
 
 const router = createRouter({

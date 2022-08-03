@@ -14,9 +14,9 @@
         <div class="q-gutter-md">
           <q-btn flat round padding="sm" color="transparent" icon="img:img/instagram.svg" href="https://www.instagram.com/joanasantostf/" target="_blank"/>
           <q-btn flat round padding="sm" color="white" icon="email" href="mailto:joanapsantos1992@gmail.com"/>
-          <q-btn flat round padding="sm" color="white" icon="call" href="tel:926398174"/>
-
-          <q-btn flat round padding="sm" color="white" icon="shopping_cart">
+          <q-btn flat round padding="sm" color="white" icon="call" href="tel:926398174" class="q-mr-xl"/>
+          
+          <q-btn flat round padding="sm" color="white" icon="shopping_cart" :to="{name: 'carrinho' }">
             <q-badge v-if="cartAmount" color="red" floating rounded>{{ cartAmount }}</q-badge>
           </q-btn>
         </div>

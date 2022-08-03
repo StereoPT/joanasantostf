@@ -38,6 +38,11 @@ const routes = [
     }
   },
   {
+    path: '/carrinho',
+    name: 'carrinho',
+    component: () => import('../pages/Carrinho.vue')
+  },
+  {
     path: '/stocks',
     name: 'stocks',
     component: () => import('../pages/Stocks.vue')

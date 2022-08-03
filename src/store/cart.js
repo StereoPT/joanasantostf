@@ -20,6 +20,9 @@ export default () => {
     },
     getters: {
       // Get Cart
+      cart(state) {
+        return state.cart;
+      },
       cartAmount(state) {
         return state.cart.length;
       }

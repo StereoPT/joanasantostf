@@ -16,6 +16,13 @@ export default () => {
         } else {
           state.cart.push(material);
         }
+      },
+      removeFromCart(state, material) {
+        const materialIndex = state.cart.indexOf(material);
+
+        if(materialIndex > -1) {
+          state.cart.splice(materialIndex, 1);
+        }
       }
     },
     getters: {

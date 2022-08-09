@@ -34,15 +34,6 @@ export default {
           }
         },
         {
-          name: 'Outros Materiais',
-          display: true,
-          fn: this.goToOutros,
-          img: {
-            path: 'img/materiais-outros.jpeg',
-            position: '50% 30%'
-          }
-        },
-        {
           name: 'Fardas Doworkwer',
           display: true,
           fn: this.goToDoworkwer,
@@ -57,9 +48,6 @@ export default {
   methods: {
     goToMOF() {
       this.$router.push({ name: 'loja.mof' });
-    },
-    goToOutros() {
-      this.$router.push({ name: 'loja.outros' });
     },
     goToDoworkwer() {
       window.open("https://www.instagram.com/doworkwear/", "_blank");

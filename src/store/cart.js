@@ -4,7 +4,9 @@ export default () => {
       cart: [ ]
     },
     mutations: {
-      // Reset Cart - To Clear the Cart
+      resetCart(state) {
+        state.cart = [ ];
+      },
       // Set Cart   - To "Load" from localStorage (later)
       addToCart(state, material) {
         const materialFound = state.cart.find(

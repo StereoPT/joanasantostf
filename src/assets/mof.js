@@ -9,7 +9,7 @@ export const mof = [
   {
     referencia: 'LT001',
     nome: 'Exercitador facial 1/3 inferior',
-    preco: 8.50,
+    preco: 6.50,
     imagem: '1.png',
     disponivel: true
   },
@@ -44,7 +44,7 @@ export const mof = [
   {
     referencia: 'LT004',
     nome: 'Afastador labial',
-    preco: 6.00,
+    preco: 5.00,
     imagem: '4.png',
     disponivel: true
   },
@@ -77,27 +77,6 @@ export const mof = [
     disponivel: true
   },
   {
-    referencia: 'LT079',
-    nome: 'Exercitador de língua (curvo)',
-    preco: 6.10,
-    imagem: '75.jpeg',
-    disponivel: true
-  },
-  {
-    referencia: 'LT080',
-    nome: 'Exercitador de língua (horizontal)',
-    preco: 6.10,
-    imagem: '76.jpeg',
-    disponivel: true
-  },
-  {
-    referencia: 'LT081',
-    nome: 'Exercitador de língua (vertical)',
-    preco: 6.10,
-    imagem: '77.jpeg',
-    disponivel: true
-  },
-  {
     referencia: 'LT010',
     nome: 'Pipetas de estimulação',
     preco: 0,
@@ -126,13 +105,6 @@ export const mof = [
     disponivel: true
   },
   {
-    referencia: 'LT015',
-    nome: 'Rolo facial sem vibração',
-    preco: 9.75,
-    imagem: '15.png',
-    disponivel: true
-  },
-  {
     referencia: 'LT018',
     nome: 'Modelo de língua',
     preco: 6.75,
@@ -141,7 +113,7 @@ export const mof = [
   },
   {
     referencia: 'LT019',
-    nome: 'Esponjas intra-orais (Pack 10)',
+    nome: 'Esponjas intra-orais (Pack 20)',
     preco: 4.20,
     imagem: '19.png',
     disponivel: true
@@ -179,7 +151,7 @@ export const mof = [
     nome: 'Cotonetes propriocetivos',
     preco: 5.00,
     imagem: '69.jpeg',
-    disponivel: true
+    disponivel: false
   },
   {
     referencia: 'LT074',

@@ -31,6 +31,10 @@
             </template>
           </q-table>
         </q-card>
+        <div class="q-mt-md row justify-between">
+          <q-btn class="" color="primary" label="Continuar a Comprar" icon="arrow_back" :to="{ name: 'loja.mof' }"/>
+          <q-btn class="" color="primary" label="Apagar Carrinho" icon="delete_outline" @click="clearCart()"/>
+        </div>
       </div>
       <div class="col-xs-12 col-sm-4">
         <q-card>
@@ -42,19 +46,19 @@
             <div class="col-6 text-right">{{ cartTotal.toFixed(2) }} €</div>
           </q-card-section>
           <q-card-section class="row summary-font-size">
-            <div class="col-6"></div>
-            <div class="col-6 text-right">+ Portes</div>
+            <div class="col-6">Portes</div>
+            <div class="col-6 text-right">{{ portes.toFixed(2) }} €</div>
           </q-card-section>
 
           <q-separator inset />
 
           <q-card-section class="row summary-font-size">
             <div class="col-6 text-bold">TOTAL</div>
-            <div class="col-6 text-right text-primary">{{ cartTotal.toFixed(2) }} €</div>
+            <div class="col-6 text-right text-primary">{{ fullTotal.toFixed(2) }} €</div>
           </q-card-section>
 
           <q-card-actions vertical>
-            <q-btn color="primary" label="Submeter Encomenda" icon-right="shopping_cart_checkout" />
+            <q-btn color="primary" label="Submeter Encomenda" icon-right="shopping_cart_checkout" :href="submitCheckout"/>
           </q-card-actions>
         </q-card>
       </div>
@@ -69,6 +73,7 @@ export default {
   data() {
     return {
       cart: [],
+      portes: 3,
       columns: [
         {
           name: 'imagem',
@@ -109,7 +114,14 @@ export default {
           name: 'remove',
           align: 'center'
         }
-      ]
+      ],
+      cartEmailTemplate: `
+mailto:joanapsantos1992@gmail.com?&
+subject=Encomenda Loja do Terapeuta&
+body=Para concluir a sua encomenda da Loja do Terapeuta, por favor indique:%0D%0A%0D%0A
+Nome:%0D%0A
+Morada completa:%0D%0A%0D%0A
+Produtos:%0D%0A`
     }
   },
   mounted() {
@@ -119,6 +131,19 @@ export default {
     cartTotal() {
       if(this.cart.length <= 0) return 0;
       return this.cart.reduce((total, item) => total + (item.preco * item.quantidade), 0);
+    },
+    fullTotal() {
+      return this.cartTotal + this.portes;
+    },
+    submitCheckout() {
+      if(this.cart.length <= 0) return;
+      let cartItems = "";
+
+      this.cart.forEach((material) => {
+        cartItems += `- ${material.quantidade}x ${material.nome} [${material.referencia}]%0D%0A`;
+      });
+
+      return `${this.cartEmailTemplate}${cartItems}`;
     }
   },
   methods: {
@@ -126,6 +151,10 @@ export default {
       this.$store.commit('removeFromCart', material);
       this.cart = this.$store.getters.cart;
     },
+    clearCart() {
+      this.$store.commit('resetCart');
+      this.cart = this.$store.getters.cart;
+    }
   }
 }
 </script>

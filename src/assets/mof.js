@@ -53,7 +53,7 @@ export const mof = [
     nome: 'Modelo de Boca',
     preco: 10.00,
     imagem: '5.png',
-    disponivel: false
+    disponivel: true
   },
   {
     referencia: 'LT006',

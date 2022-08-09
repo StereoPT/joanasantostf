@@ -1,7 +1,6 @@
 import { createRouter, createWebHashHistory } from 'vue-router';
 
 import { mof } from '../assets/mof';
-import { outros } from '../assets/outros';
 
 const routes = [
   {
@@ -26,15 +25,6 @@ const routes = [
     props: {
       title: 'Materiais MOF',
       materiais: mof
-    }
-  },
-  {
-    path: '/loja/outros',
-    name: 'loja.outros',
-    component: () => import('../pages/Loja.vue'),
-    props: {
-      title: 'Outros Materiais',
-      materiais: outros
     }
   },
   {

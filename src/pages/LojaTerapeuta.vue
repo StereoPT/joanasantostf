@@ -34,6 +34,15 @@ export default {
           }
         },
         {
+          name: 'Brevemente Disponível',
+          display: true,
+          fn: '',
+          img: {
+            path: 'img/livro_novo.jpeg',
+            position: '50% 65%'
+          }
+        },
+        {
           name: 'Fardas Doworkwer',
           display: true,
           fn: this.goToDoworkwer,

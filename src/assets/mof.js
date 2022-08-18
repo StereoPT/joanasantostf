@@ -39,7 +39,7 @@ export const mof = [
     nome: 'Espelho intra-oral',
     preco: 3.50,
     imagem: 'espelho_intraoral.png',
-    disponivel: true
+    disponivel: false
   },
   {
     referencia: 'LT001',
@@ -81,7 +81,7 @@ export const mof = [
     nome: 'Pipetas (Pack 20)',
     preco: 4.20,
     imagem: 'pipetas.png',
-    disponivel: true
+    disponivel: false
   },
   {
     referencia: 'LT021',

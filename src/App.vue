@@ -59,6 +59,9 @@ export default {
     toggleDrawer () {
       this.drawerOpen = !this.drawerOpen
     }
+  },
+  async mounted() {
+    await this.$store.commit('setCart');
   }
 }
 </script>

@@ -156,7 +156,7 @@ export const mof = [
   {
     referencia: 'LT011',
     nome: 'Guias Linguais (Kit 4)',
-    preco: 4.00,
+    preco: 5.00,
     imagem: 'guias_linguais.jpeg',
     disponivel: true
   },

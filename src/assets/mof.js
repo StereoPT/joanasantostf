@@ -4,7 +4,7 @@ export const mof = [
     nome: 'Exercitador de língua (Kit 3 Peças)',
     preco: 17.50,
     imagem: 'exercitador_lingua.png',
-    disponivel: true
+    disponivel: false
   },
   {
     referencia: 'LT003',
@@ -109,7 +109,7 @@ export const mof = [
     nome: 'Modelo de língua',
     preco: 6.75,
     imagem: 'modelo_lingua.png',
-    disponivel: true
+    disponivel: false
   },
   {
     referencia: 'LT023',

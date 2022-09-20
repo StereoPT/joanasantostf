@@ -81,7 +81,7 @@ export const mof = [
     nome: 'Pipetas (Pack 20)',
     preco: 4.20,
     imagem: 'pipetas.png',
-    disponivel: false
+    disponivel: true
   },
   {
     referencia: 'LT021',

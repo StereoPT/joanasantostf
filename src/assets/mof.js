@@ -1,10 +1,38 @@
 export const mof = [
   {
+    referencia: 'LT025',
+    nome: 'Estimulador facial e intra-oral',
+    preco: 17.00,
+    imagem: 'estimulador_facial_intra-oral.jpeg',
+    disponivel: true
+  },
+  {
+    referencia: 'LT026',
+    nome: 'Lollipop intra-oral',
+    preco: 10.00,
+    imagem: 'lollipop_intra-oral.jpeg',
+    disponivel: true
+  },
+  {
+    referencia: 'LT027',
+    nome: 'Tubinhos mastigatorios (Kit 2)',
+    preco: 8.00,
+    imagem: 'tubinhos_mastigatorios.jpeg',
+    disponivel: true
+  },
+  {
+    referencia: 'LT028',
+    nome: 'Ventosas faciais (Kit 2)',
+    preco: 4.00,
+    imagem: 'ventosas_faciais.jpeg',
+    disponivel: true,
+  },
+  {
     referencia: 'LT010',
     nome: 'Exercitador de língua (Kit 3 Peças)',
     preco: 17.50,
     imagem: 'exercitador_lingua.png',
-    disponivel: false
+    disponivel: true
   },
   {
     referencia: 'LT003',
@@ -39,7 +67,7 @@ export const mof = [
     nome: 'Espelho intra-oral',
     preco: 3.50,
     imagem: 'espelho_intraoral.png',
-    disponivel: false
+    disponivel: true
   },
   {
     referencia: 'LT001',
@@ -109,7 +137,7 @@ export const mof = [
     nome: 'Modelo de língua',
     preco: 6.75,
     imagem: 'modelo_lingua.png',
-    disponivel: false
+    disponivel: true
   },
   {
     referencia: 'LT023',
@@ -137,14 +165,14 @@ export const mof = [
     nome: 'Rolo sensorial',
     preco: 9.00,
     imagem: 'rolo_sensorial.png',
-    disponivel: false
+    disponivel: true
   },
   {
     referencia: 'LT004',
     nome: 'Cotonetes propriocetivos (Pack 30)',
     preco: 3.00,
     imagem: 'cotonete_propriocetivos.jpeg',
-    disponivel: false
+    disponivel: true
   },
   {
     referencia: 'LT025',
@@ -156,7 +184,7 @@ export const mof = [
   {
     referencia: 'LT011',
     nome: 'Guias Linguais (Kit 4)',
-    preco: 5.00,
+    preco: 5.50,
     imagem: 'guias_linguais.jpeg',
     disponivel: true
   },
@@ -172,6 +200,6 @@ export const mof = [
     nome: 'Sugador de Lingua',
     preco: 6.00,
     imagem: 'sugador_lingua.png',
-    disponivel: true
+    disponivel: false
   }
 ];

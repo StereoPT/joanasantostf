@@ -34,14 +34,14 @@ export default {
         nome: 'Kit MOF Gold',
         preco: 100.00,
         imagem: 'kit_mof_gold.jpeg',
-        disponivel: false
+        disponivel: true
       },
       kitKids: {
         referencia: 'LTKitKids',
         nome: 'Kit MOF Kids',
         preco: 65.00,
         imagem: 'kit_mof_kids.jpeg',
-        disponivel: false
+        disponivel: true
       },
     }
   },

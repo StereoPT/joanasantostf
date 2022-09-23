@@ -200,6 +200,6 @@ export const mof = [
     nome: 'Sugador de Lingua',
     preco: 6.00,
     imagem: 'sugador_lingua.png',
-    disponivel: false
+    disponivel: true
   }
 ];

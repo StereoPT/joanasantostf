@@ -1,5 +1,10 @@
 <template>
   <q-card class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2" v-if="material.preco">
+    <section class="relative-position" v-if="material.new">
+      <div class="new-banner">
+        Novo
+      </div>
+    </section>
     <q-img :src="`loja/${material.imagem}`" style="height: 250px" fit="scale-down" />
 
     <q-item>
@@ -73,4 +78,28 @@ export default {
 }
 </script>
 
-<style scoped> </style>
+<style scoped>
+  .new-banner {
+    margin-left: -12px;
+    padding: 2px 10px 2px 24px;
+    background: #e0e0e0;
+    color: #616161;
+    font-size: large;
+    position: absolute;
+    top: 8px;
+    border-radius: 3px 5px 5px 0;
+    z-index: 2;
+  }
+
+  .new-banner::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-top-color: #bebebe;
+    border-width: 9px 0 0 11px;
+  }
+</style>

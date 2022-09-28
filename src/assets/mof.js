@@ -4,21 +4,24 @@ export const mof = [
     nome: 'Estimulador facial e intra-oral',
     preco: 17.00,
     imagem: 'estimulador_facial_intra-oral.jpeg',
-    disponivel: true
+    disponivel: true,
+    new: true
   },
   {
     referencia: 'LT026',
     nome: 'Lollipop intra-oral',
     preco: 10.00,
     imagem: 'lollipop_intra-oral.jpeg',
-    disponivel: true
+    disponivel: true,
+    new: true
   },
   {
     referencia: 'LT027',
     nome: 'Tubinhos mastigatorios (Kit 2)',
     preco: 8.00,
     imagem: 'tubinhos_mastigatorios.jpeg',
-    disponivel: true
+    disponivel: true,
+    new: true
   },
   {
     referencia: 'LT028',
@@ -26,6 +29,7 @@ export const mof = [
     preco: 4.00,
     imagem: 'ventosas_faciais.jpeg',
     disponivel: true,
+    new: true
   },
   {
     referencia: 'LT010',
@@ -81,7 +85,7 @@ export const mof = [
     nome: 'Modelo de boca',
     preco: 10.00,
     imagem: 'modelo_boca.png',
-    disponivel: true
+    disponivel: false
   },
   {
     referencia: 'LT015',

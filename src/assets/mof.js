@@ -1,11 +1,26 @@
 export const mof = [
   {
+    referencia: 'LTKitKids',
+    nome: 'Kit MOF Kids',
+    preco: 65.00,
+    imagem: 'kit_mof_kids.jpeg',
+    disponivel: true,
+    new: 'Mais Vendido'
+  },
+  {
+      referencia: 'LTKitGold',
+      nome: 'Kit MOF Gold',
+      preco: 100.00,
+      imagem: 'kit_mof_gold.jpeg',
+      disponivel: false
+  },
+  {
     referencia: 'LT025',
     nome: 'Estimulador facial e intra-oral',
     preco: 17.00,
     imagem: 'estimulador_facial_intra-oral.jpeg',
     disponivel: true,
-    new: true
+    new: 'Novo'
   },
   {
     referencia: 'LT026',
@@ -13,7 +28,7 @@ export const mof = [
     preco: 10.00,
     imagem: 'lollipop_intra-oral.jpeg',
     disponivel: true,
-    new: true
+    new: 'Novo'
   },
   {
     referencia: 'LT027',
@@ -21,7 +36,7 @@ export const mof = [
     preco: 8.00,
     imagem: 'tubinhos_mastigatorios.jpeg',
     disponivel: true,
-    new: true
+    new: 'Novo'
   },
   {
     referencia: 'LT028',
@@ -29,7 +44,7 @@ export const mof = [
     preco: 4.00,
     imagem: 'ventosas_faciais.jpeg',
     disponivel: true,
-    new: true
+    new: 'Novo'
   },
   {
     referencia: 'LT010',

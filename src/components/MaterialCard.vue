@@ -2,14 +2,14 @@
   <q-card class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2" v-if="material.preco">
     <section class="relative-position" v-if="material.new">
       <div class="new-banner">
-        Novo
+        {{ material.new }}
       </div>
     </section>
-    <q-img :src="`loja/${material.imagem}`" style="height: 250px" fit="scale-down" />
+    <q-img class="cursor-pointer" :src="`loja/${material.imagem}`" style="height: 250px" fit="scale-down" />
 
     <q-item>
       <q-item-section>
-        <q-item-label class="text-body1">
+        <q-item-label class="text-body1 cursor-pointer">
           {{ material.nome }}
         </q-item-label>
         <q-item-label caption>Referência: {{ material.referencia }}</q-item-label>
@@ -37,7 +37,7 @@
         color="primary"
         label="Adicionar ao Carrinho"
         icon="add_shopping_cart"
-        @click="addToCart()"
+        @click.prevent="addToCart()"
         :disable="!material.disponivel" />
     </q-card-actions>
   </q-card>

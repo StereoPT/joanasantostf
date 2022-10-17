@@ -2,7 +2,7 @@ export const mof = [
   {
     referencia: 'LTKitKids',
     nome: 'Kit MOF Kids',
-    preco: 65.00,
+    preco: 62.00,
     imagem: 'kit_mof_kids.jpeg',
     disponivel: true,
     new: 'Mais Vendido'
@@ -10,7 +10,7 @@ export const mof = [
   {
       referencia: 'LTKitGold',
       nome: 'Kit MOF Gold',
-      preco: 100.00,
+      preco: 97.00,
       imagem: 'kit_mof_gold.jpeg',
       disponivel: false
   },

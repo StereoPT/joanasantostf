@@ -26,7 +26,7 @@
     <q-drawer v-model="drawerOpen" side="left" elevated overlay>
       <q-scroll-area class="fit">
         <SidebarItem :link="{name: 'landingPage'}" :icon="'home'" :label="'Inicio'" />
-        <SidebarItem :url="'https://docs.google.com/forms/d/1gOapur5po5rZn3U1X-AgtWSxvecpWqdzmu9Ts1l8UrM'" :icon="'school'" :label="'Mentoria Top Mof'" />
+        <SidebarItem :url="'https://docs.google.com/forms/d/1gOapur5po5rZn3U1X-AgtWSxvecpWqdzmu9Ts1l8UrM'" :icon="'school'" :label="'Mentoria TOP-MOF'" />
         <SidebarItem :link="{name: 'marcacoes'}" :icon="'calendar_month'" :label="'Marcações'" />
         <SidebarItem :link="{name: 'loja'}" :icon="'shopping_cart'" :label="'Loja'" />
       </q-scroll-area>

@@ -73,7 +73,7 @@ export default {
   data() {
     return {
       cart: [],
-      portes: 3,
+      portes: 4,
       columns: [
         {
           name: 'imagem',

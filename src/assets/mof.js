@@ -93,7 +93,7 @@ export const mof = [
     nome: 'Afastador labial (conjunto de 2)',
     preco: 10.00,
     imagem: 'afastador_labial.png',
-    disponivel: true
+    disponivel: false
   },
   {
     referencia: 'LT013',

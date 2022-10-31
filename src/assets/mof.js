@@ -19,7 +19,7 @@ export const mof = [
     nome: 'Estimulador facial e intra-oral',
     preco: 17.00,
     imagem: 'estimulador_facial_intra-oral.jpeg',
-    disponivel: true,
+    disponivel: false,
     new: 'Novo'
   },
   {
@@ -43,7 +43,7 @@ export const mof = [
     nome: 'Ventosas faciais (Kit 2)',
     preco: 4.00,
     imagem: 'ventosas_faciais.jpeg',
-    disponivel: true,
+    disponivel: false,
     new: 'Novo'
   },
   {
@@ -51,7 +51,7 @@ export const mof = [
     nome: 'Exercitador de língua (Kit 3 Peças)',
     preco: 17.50,
     imagem: 'exercitador_lingua.png',
-    disponivel: true
+    disponivel: false
   },
   {
     referencia: 'LT003',

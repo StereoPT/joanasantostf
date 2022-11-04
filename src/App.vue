@@ -23,13 +23,16 @@
       </q-toolbar>
     </q-header>
 
-    <q-drawer v-model="drawerOpen" side="left" elevated overlay>
-      <q-scroll-area class="fit">
+    <q-drawer class="column justify-between no-wrap" v-model="drawerOpen" side="left" elevated overlay>
+      <q-list>
         <SidebarItem :link="{name: 'landingPage'}" :icon="'home'" :label="'Inicio'" />
         <SidebarItem :url="'https://docs.google.com/forms/d/1gOapur5po5rZn3U1X-AgtWSxvecpWqdzmu9Ts1l8UrM'" :icon="'school'" :label="'Mentoria TOP-MOF'" />
         <SidebarItem :link="{name: 'marcacoes'}" :icon="'calendar_month'" :label="'Marcações'" />
         <SidebarItem :link="{name: 'loja'}" :icon="'shopping_cart'" :label="'Loja'" />
-      </q-scroll-area>
+      </q-list>
+      <q-item class="col-grow" />
+      <q-item-label header dense>Parcerias</q-item-label>
+      <SidebarItem :url="'https://www.instagram.com/doworkwear'" :icon="'dry_cleaning'" :label="'Dô Workwear'"/>
     </q-drawer>
 
     <q-page-container>

@@ -16,15 +16,17 @@ const routes = [
   {
     path: '/loja',
     name: 'loja',
-    component: () => import('../pages/LojaTerapeuta.vue'),
-  },
-  {
-    path: '/loja/mof',
-    name: 'loja.mof',
     component: () => import('../pages/Loja.vue'),
     props: {
-      title: 'Materiais MOF',
       materiais: mof
+    }
+  },  
+  {
+    path: '/loja/mof/material',
+    name: 'loja.mof.ref',
+    component: () => import('../pages/DetailsPage.vue'),
+    props: {
+      material: Object
     }
   },
   {

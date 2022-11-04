@@ -80,7 +80,7 @@ export default {
 
 <style scoped>
   .new-banner {
-    margin-left: -12px;
+    margin-left: -11px;
     padding: 2px 10px 2px 24px;
     background: #e0e0e0;
     color: #616161;

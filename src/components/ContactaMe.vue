@@ -5,6 +5,11 @@
         <q-input outlined v-model="nome" label="Nome" />
       </div>
       <div class="col-xs-12 col-md-6">
+        <q-input outlined v-model="idade" label="Idade" />
+      </div>
+    </div>
+    <div class="row q-mt-md">
+      <div class="col-xs-12">
         <q-input outlined v-model="assunto" label="Assunto" />
       </div>
     </div>
@@ -27,13 +32,14 @@ export default {
   data() {
     return {
       nome: '',
+      idade: '',
       assunto: '',
       mensagem: ''
     }
   },
   computed: {
     mailTo() {
-      return `mailto:joanapsantos1992@gmail.com?&subject=${this.nome} - ${this.assunto}&body=${this.mensagem}`;
+      return `mailto:joanapsantos1992@gmail.com?&subject=${this.nome} - ${this.assunto} - ${this.idade} Anos&body=${this.mensagem}`;
     }
   }
 }

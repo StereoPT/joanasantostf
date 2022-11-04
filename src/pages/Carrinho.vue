@@ -32,7 +32,7 @@
           </q-table>
         </q-card>
         <div class="q-mt-md row justify-between">
-          <q-btn class="" color="primary" label="Continuar a Comprar" icon="arrow_back" :to="{ name: 'loja.mof' }"/>
+          <q-btn class="" color="primary" label="Continuar a Comprar" icon="arrow_back" :to="{ name: 'loja' }"/>
           <q-btn class="" color="primary" label="Apagar Carrinho" icon="delete_outline" @click="clearCart()"/>
         </div>
       </div>
@@ -58,7 +58,7 @@
           </q-card-section>
 
           <q-card-actions vertical>
-            <q-btn color="primary" label="Submeter Encomenda" icon-right="shopping_cart_checkout" :href="submitCheckout"/>
+            <q-btn color="primary" label="Submeter Encomenda" icon-right="shopping_cart_checkout" :href="submitCheckout" @click="checkoutConfirmation"/>
           </q-card-actions>
         </q-card>
       </div>
@@ -147,6 +147,12 @@ Produtos:%0D%0A`
     }
   },
   methods: {
+    checkoutConfirmation() {
+      this.$dialog.create({
+        title: 'Obrigado pela sua encomenda',
+        message: 'Receberá um e-mail com as informações de pagamento, brevemente.'
+      });
+    },
     removeProduct(material) {
       this.$store.commit('removeFromCart', material);
       this.cart = this.$store.getters.cart;

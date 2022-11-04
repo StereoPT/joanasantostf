@@ -20,14 +20,6 @@ const routes = [
     props: {
       materiais: mof
     }
-  },  
-  {
-    path: '/loja/mof/material',
-    name: 'loja.mof.ref',
-    component: () => import('../pages/DetailsPage.vue'),
-    props: {
-      material: Object
-    }
   },
   {
     path: '/carrinho',

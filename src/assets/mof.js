@@ -30,7 +30,7 @@ export const mof = {
       nome: 'SOS Fono',
       preco: 18.5,
       imagem: 'sos_fono.jpeg',
-      disponivel: false
+      disponivel: true
     }
   ],
   mof: [

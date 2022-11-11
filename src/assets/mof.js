@@ -55,7 +55,7 @@ export const mof = {
       nome: 'Tubinhos mastigatorios (Kit 2)',
       preco: 8.00,
       imagem: 'tubinhos_mastigatorios.jpeg',
-      disponivel: true,
+      disponivel: false,
       new: 'Novo'
     },
     {

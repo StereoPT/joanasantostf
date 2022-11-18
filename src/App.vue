@@ -59,13 +59,16 @@ export default {
       return this.$store.getters.cartAmount;
     }
   },
+  mounted() {
+    this.setCart();
+  },
   methods: {
     toggleDrawer () {
       this.drawerOpen = !this.drawerOpen
+    },
+    async setCart() {
+      await this.$store.commit('setCart');
     }
-  },
-  async mounted() {
-    await this.$store.commit('setCart');
   }
 }
 </script>

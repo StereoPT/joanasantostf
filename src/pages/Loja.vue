@@ -31,10 +31,10 @@
 </template>
 
 <script>
-import MaterialCard from '../components/MaterialCard.vue';
+import MaterialCard from '../components/loja/MaterialCard.vue';
 
 export default {
-  name: 'Dynamic Loja',
+  name: 'Loja',
   data() {
     return {
       

@@ -16,9 +16,9 @@
 </template>
 
 <script>
-import { links } from '../assets/links.js';
-// import MarcacoesCard from '../components/MarcacoesCard.vue';
-import ContactaMe from '../components/ContactaMe.vue';
+// import { links } from '../assets/links.js';
+// import MarcacoesCard from '../components/marcacoes/MarcacoesCard.vue';
+import ContactaMe from '../components/marcacoes/ContactaMe.vue';
 
 export default {
   name: 'Marcacoes',
@@ -27,11 +27,11 @@ export default {
     // MarcacoesCard,
     ContactaMe
   },
-  data() {
+  /* data() {
     return {
       links: links
     }
-  },
+  }, */
 }
 </script>
 

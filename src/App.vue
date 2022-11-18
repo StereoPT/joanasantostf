@@ -1,14 +1,14 @@
 <template>
   <q-layout view="hHh Lpr lff">
     <q-header elevated class="bg-primary text-white">
-      <q-toolbar>
+      <q-toolbar class="justify-between">
         <q-btn dense flat round icon="menu" @click="toggleDrawer" />
 
-        <q-toolbar-title>
+        <q-toolbar-title class="gt-xs">
           <!-- <q-avatar>
             Add Brand Logo Here
           </q-avatar> -->
-          Joana Santos<span class="gt-xs"> - Terapeuta da Fala</span>
+          Joana Santos<span> - Terapeuta da Fala</span>
         </q-toolbar-title>
 
         <div class="q-gutter-md">

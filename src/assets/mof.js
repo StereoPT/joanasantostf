@@ -1,6 +1,6 @@
 export const mof = {
   kits: [
-    {
+    /*{
       referencia: 'LTKitKids',
       nome: 'Kit MOF Kids',
       preco: 62.00,
@@ -14,7 +14,7 @@ export const mof = {
         preco: 97.00,
         imagem: 'kit_mof_gold.jpeg',
         disponivel: false
-    },
+    }*/
   ],
   livros: [
     {

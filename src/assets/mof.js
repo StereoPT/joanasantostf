@@ -35,11 +35,51 @@ export const mof = {
   ],
   mof: [
     {
+      referencia: 'LT029',
+      nome: 'Palhinha divertida (Óculos)',
+      preco: 4.50,
+      imagem: 'palhinha_divertida.jpeg',
+      disponivel: true,
+      new: 'Novo'
+    },
+    {
+      referencia: 'LT030',
+      nome: 'Tape elástica transparente (Pack 20)',
+      preco: 5.00,
+      imagem: 'tape_elastica.jpg',
+      disponivel: true,
+      new: 'Novo'
+    },
+    {
+      referencia: 'LT031',
+      nome: 'Ventosa facial S/M/L (Kit 3)',
+      preco: 20.00,
+      imagem: 'ventosa_facial_kit.jpeg',
+      disponivel: true,
+      new: 'Novo'
+    },
+    {
+      referencia: 'LT032',
+      nome: 'Tubo de ressonância em silicone (Kit 2)',
+      preco: 5.00,
+      imagem: 'tubo_ressonancia_kit.jpeg',
+      disponivel: true,
+      new: 'Mais Vendido'
+    },
+    {
+      referencia: 'LT033',
+      nome: 'Sticks dentários infantil (Pack 30)',
+      preco: 4.00,
+      imagem: 'sticks_dentarios.jpeg',
+      disponivel: true,
+      new: 'Mais Vendido'
+    },
+    {
       referencia: 'LT025',
       nome: 'Estimulador facial e intra-oral',
       preco: 17.00,
       imagem: 'estimulador_facial_intra-oral.jpeg',
-      disponivel: false,
+      disponivel: true,
       new: 'Novo'
     },
     {
@@ -55,7 +95,7 @@ export const mof = {
       nome: 'Tubinhos mastigatorios (Kit 2)',
       preco: 8.00,
       imagem: 'tubinhos_mastigatorios.jpeg',
-      disponivel: false,
+      disponivel: true,
       new: 'Novo'
     },
     {
@@ -64,7 +104,6 @@ export const mof = {
       preco: 4.00,
       imagem: 'ventosas_faciais.jpeg',
       disponivel: false,
-      new: 'Novo'
     },
     {
       referencia: 'LT010',
@@ -114,7 +153,7 @@ export const mof = {
       nome: 'Afastador labial (conjunto de 2)',
       preco: 10.00,
       imagem: 'afastador_labial.png',
-      disponivel: false
+      disponivel: true
     },
     {
       referencia: 'LT013',
@@ -163,14 +202,7 @@ export const mof = {
       nome: 'Rolo facial com vibração',
       preco: 16.00,
       imagem: 'rolo_facial_vibracao.png',
-      disponivel: false
-    },
-    {
-      referencia: 'LT024',
-      nome: 'Ventosa facial',
-      preco: 8.00,
-      imagem: 'ventosa_facial.png',
-      disponivel: false
+      disponivel: true
     },
     {
       referencia: 'LT014',

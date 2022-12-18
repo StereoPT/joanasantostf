@@ -35,6 +35,22 @@ export const mof = {
   ],
   mof: [
     {
+      referencia: 'LT034',
+      nome: 'Detergente desinfetante, fungicida, batericida (1L)',
+      preco: 15.00,
+      imagem: 'detergente_desinfetante.jpeg',
+      disponivel: true,
+      new: 'Novo'
+    },
+    {
+      referencia: 'LT035',
+      nome: 'Super desinfetante sem enxaguamento (1L)',
+      preco: 18.00,
+      imagem: 'super_desinfetante.jpeg',
+      disponivel: true,
+      new: 'Novo'
+    },
+    {
       referencia: 'LT029',
       nome: 'Palhinha divertida (Óculos)',
       preco: 4.50,

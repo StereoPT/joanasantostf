@@ -73,7 +73,6 @@ export default {
   data() {
     return {
       cart: [],
-      portes: 4,
       columns: [
         {
           name: 'imagem',
@@ -120,7 +119,8 @@ mailto:joanapsantos1992@gmail.com?&
 subject=Encomenda Loja do Terapeuta&
 body=Para concluir a sua encomenda da Loja do Terapeuta, por favor indique:%0D%0A%0D%0A
 Nome:%0D%0A
-Morada completa:%0D%0A%0D%0A
+Morada completa:%0D%0A
+Codigo de desconto:%0D%0A%0D%0A
 Produtos:%0D%0A`
     }
   },
@@ -131,6 +131,18 @@ Produtos:%0D%0A`
     cartTotal() {
       if(this.cart.length <= 0) return 0;
       return this.cart.reduce((total, item) => total + (item.preco * item.quantidade), 0);
+    },
+    portes() {
+      let portes = 4;
+      if(this.cart.length > 0) {
+        if(this.cart.some((c) => c.referencia === 'LT034' || c.referencia === 'LT035')) {
+          portes = portes + 2;
+        }
+      } else {
+        portes = 0;
+      }
+
+      return portes;
     },
     fullTotal() {
       return this.cartTotal + this.portes;

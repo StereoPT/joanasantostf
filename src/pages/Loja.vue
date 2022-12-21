@@ -13,7 +13,7 @@
         </div>
 
         <div v-if="materiais.desinfeccao.length !== 0">
-          <h5 class="with-line text-bold text-primary q-mb-md">Material MOF</h5>
+          <h5 class="with-line text-bold text-primary q-mb-md">Material Desinfecção</h5>
           <div class="row justify-center q-gutter-lg">
             <MaterialCard v-for="material in materiais.desinfeccao" :key="material.referencia" :material="material" />
           </div>

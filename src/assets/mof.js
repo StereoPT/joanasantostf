@@ -33,7 +33,7 @@ export const mof = {
       disponivel: true
     }
   ],
-  mof: [
+  desinfeccao: [
     {
       referencia: 'LT034',
       nome: 'Detergente desinfetante, fungicida, batericida (1L)',
@@ -49,7 +49,9 @@ export const mof = {
       imagem: 'super_desinfetante.jpeg',
       disponivel: true,
       new: 'Novo'
-    },
+    }
+  ],
+  mof: [
     {
       referencia: 'LT029',
       nome: 'Palhinha divertida (Óculos)',
@@ -134,7 +136,7 @@ export const mof = {
       nome: 'Exercitador facial (cogumelo)',
       preco: 6.50,
       imagem: 'cogumelo.png',
-      disponivel: true
+      disponivel: false
     },
     {
       referencia: 'LT012',
@@ -211,7 +213,7 @@ export const mof = {
       nome: 'Exercitador peri-orbicular (smile)',
       preco: 6.00,
       imagem: 'exercitador_periorbicular.png',
-      disponivel: true
+      disponivel: false
     },
     {
       referencia: 'LT019',

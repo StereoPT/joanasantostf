@@ -192,7 +192,7 @@ export const mof = {
       nome: 'Cachimbo de sopro',
       preco: 2.75,
       imagem: 'cachimbo_sopro.png',
-      disponivel: true
+      disponivel: false
     },
     {
       referencia: 'LT008',

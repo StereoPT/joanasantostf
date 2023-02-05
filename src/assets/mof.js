@@ -126,9 +126,9 @@ export const mof = {
     {
       referencia: 'LT010',
       nome: 'Exercitador de língua (Kit 3 Peças)',
-      preco: 17.50,
+      preco: 19.99,
       imagem: 'exercitador_lingua.png',
-      disponivel: false,
+      disponivel: true,
       new: 'Mais Vendido'
     },
     {
@@ -136,7 +136,7 @@ export const mof = {
       nome: 'Exercitador facial (cogumelo)',
       preco: 6.50,
       imagem: 'cogumelo.png',
-      disponivel: false
+      disponivel: true
     },
     {
       referencia: 'LT012',
@@ -192,7 +192,7 @@ export const mof = {
       nome: 'Cachimbo de sopro',
       preco: 2.75,
       imagem: 'cachimbo_sopro.png',
-      disponivel: false
+      disponivel: true
     },
     {
       referencia: 'LT008',
@@ -213,7 +213,7 @@ export const mof = {
       nome: 'Exercitador peri-orbicular (smile)',
       preco: 6.00,
       imagem: 'exercitador_periorbicular.png',
-      disponivel: false
+      disponivel: true
     },
     {
       referencia: 'LT019',

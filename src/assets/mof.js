@@ -220,7 +220,7 @@ export const mof = {
       nome: 'Rolo facial com vibração',
       preco: 16.00,
       imagem: 'rolo_facial_vibracao.png',
-      disponivel: true
+      disponivel: false
     },
     {
       referencia: 'LT014',

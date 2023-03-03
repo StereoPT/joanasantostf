@@ -185,7 +185,7 @@ export const mof = {
       nome: 'Neckline',
       preco: 15.00,
       imagem: 'neckline.png',
-      disponivel: true
+      disponivel: false
     },
     {
       referencia: 'LT002',

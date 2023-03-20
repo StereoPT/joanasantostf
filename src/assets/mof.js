@@ -136,7 +136,7 @@ export const mof = {
       nome: 'Exercitador facial (cogumelo)',
       preco: 6.50,
       imagem: 'cogumelo.png',
-      disponivel: true
+      disponivel: false
     },
     {
       referencia: 'LT012',

@@ -5,7 +5,7 @@ export const mof = {
       nome: 'Kit MOF Kids',
       preco: 62.00,
       imagem: 'kit_mof_kids.jpeg',
-      disponivel: true,
+      disponivel: false,
       new: 'Mais Vendido'
     },
     {
@@ -30,7 +30,7 @@ export const mof = {
       nome: 'SOS Fono',
       preco: 18.5,
       imagem: 'sos_fono.jpeg',
-      disponivel: true
+      disponivel: false
     }
   ],
   desinfeccao: [
@@ -39,7 +39,7 @@ export const mof = {
       nome: 'Detergente desinfetante, fungicida, batericida (1L)',
       preco: 15.00,
       imagem: 'detergente_desinfetante.jpeg',
-      disponivel: true,
+      disponivel: false,
       new: 'Novo'
     },
     {
@@ -47,7 +47,7 @@ export const mof = {
       nome: 'Super desinfetante sem enxaguamento (1L)',
       preco: 18.00,
       imagem: 'super_desinfetante.jpeg',
-      disponivel: true,
+      disponivel: false,
       new: 'Novo'
     }
   ],
@@ -57,7 +57,7 @@ export const mof = {
       nome: 'Palhinha divertida (Óculos)',
       preco: 4.50,
       imagem: 'palhinha_divertida.jpeg',
-      disponivel: true,
+      disponivel: false,
       new: 'Novo'
     },
     {
@@ -65,7 +65,7 @@ export const mof = {
       nome: 'Tape elástica transparente (Pack 20)',
       preco: 5.00,
       imagem: 'tape_elastica.jpg',
-      disponivel: true,
+      disponivel: false,
       new: 'Novo'
     },
     {
@@ -73,7 +73,7 @@ export const mof = {
       nome: 'Ventosa facial S/M/L (Kit 3)',
       preco: 20.00,
       imagem: 'ventosa_facial_kit.jpeg',
-      disponivel: true,
+      disponivel: false,
       new: 'Novo'
     },
     {
@@ -81,7 +81,7 @@ export const mof = {
       nome: 'Tubo de ressonância em silicone (Kit 2)',
       preco: 5.00,
       imagem: 'tubo_ressonancia_kit.jpeg',
-      disponivel: true,
+      disponivel: false,
       new: 'Mais Vendido'
     },
     {
@@ -89,7 +89,7 @@ export const mof = {
       nome: 'Sticks dentários infantil (Pack 30)',
       preco: 4.00,
       imagem: 'sticks_dentarios.jpeg',
-      disponivel: true,
+      disponivel: false,
       new: 'Mais Vendido'
     },
     {
@@ -97,7 +97,7 @@ export const mof = {
       nome: 'Estimulador facial e intra-oral',
       preco: 17.00,
       imagem: 'estimulador_facial_intra-oral.jpeg',
-      disponivel: true,
+      disponivel: false,
       new: 'Novo'
     },
     {
@@ -105,7 +105,7 @@ export const mof = {
       nome: 'Lollipop intra-oral',
       preco: 10.00,
       imagem: 'lollipop_intra-oral.jpeg',
-      disponivel: true,
+      disponivel: false,
       new: 'Novo'
     },
     {
@@ -113,7 +113,7 @@ export const mof = {
       nome: 'Tubinhos mastigatorios (Kit 2)',
       preco: 8.00,
       imagem: 'tubinhos_mastigatorios.jpeg',
-      disponivel: true,
+      disponivel: false,
       new: 'Novo'
     },
     {
@@ -128,7 +128,7 @@ export const mof = {
       nome: 'Exercitador de língua (Kit 3 Peças)',
       preco: 19.99,
       imagem: 'exercitador_lingua.png',
-      disponivel: true,
+      disponivel: false,
       new: 'Mais Vendido'
     },
     {
@@ -143,42 +143,42 @@ export const mof = {
       nome: 'Massajador com vibração T',
       preco: 15.00,
       imagem: 'massajador_vibracao.png',
-      disponivel: true
+      disponivel: false
     },
     {
       referencia: 'LT005',
       nome: 'Dedeira de silicone',
       preco: 4.50,
       imagem: 'dedeira_silicone.png',
-      disponivel: true
+      disponivel: false
     },
     {
       referencia: 'LT007',
       nome: 'Escova propriocetiva',
       preco: 6.00,
       imagem: 'escova_propriocetiva.png',
-      disponivel: true
+      disponivel: false
     },
     {
       referencia: 'LT009',
       nome: 'Espelho intra-oral',
       preco: 3.50,
       imagem: 'espelho_intraoral.png',
-      disponivel: true
+      disponivel: false
     },
     {
       referencia: 'LT001',
       nome: 'Afastador labial (conjunto de 2)',
       preco: 10.00,
       imagem: 'afastador_labial.png',
-      disponivel: true
+      disponivel: false
     },
     {
       referencia: 'LT013',
       nome: 'Modelo de boca',
       preco: 10.00,
       imagem: 'modelo_boca.png',
-      disponivel: true
+      disponivel: false
     },
     {
       referencia: 'LT015',
@@ -192,28 +192,28 @@ export const mof = {
       nome: 'Cachimbo de sopro',
       preco: 2.75,
       imagem: 'cachimbo_sopro.png',
-      disponivel: true
+      disponivel: false
     },
     {
       referencia: 'LT008',
       nome: 'Esfera de crioterapia (conjunto de 2)',
       preco: 25.00,
       imagem: 'esfera_crioterapia.png',
-      disponivel: true
+      disponivel: false
     },
     {
       referencia: 'LT017',
       nome: 'Pipetas (Pack 20)',
       preco: 4.20,
       imagem: 'pipetas.png',
-      disponivel: true
+      disponivel: false
     },
     {
       referencia: 'LT021',
       nome: 'Exercitador peri-orbicular (smile)',
       preco: 6.00,
       imagem: 'exercitador_periorbicular.png',
-      disponivel: true
+      disponivel: false
     },
     {
       referencia: 'LT019',
@@ -227,70 +227,70 @@ export const mof = {
       nome: 'Modelo de língua',
       preco: 6.75,
       imagem: 'modelo_lingua.png',
-      disponivel: true
+      disponivel: false
     },
     {
       referencia: 'LT023',
       nome: 'Swabs - Esponjas (Pack 20)',
       preco: 5.00,
       imagem: 'swabs.png',
-      disponivel: true
+      disponivel: false
     },
     {
       referencia: 'LT016',
       nome: 'Oxímetro',
       preco: 20.00,
       imagem: 'oximetro.png',
-      disponivel: true
+      disponivel: false
     },
     {
       referencia: 'LT006',
       nome: 'Elásticos Ortodontia',
       preco: 4.00,
       imagem: 'elasticos_ortodontia.png',
-      disponivel: true
+      disponivel: false
     },
     {
       referencia: 'LT020',
       nome: 'Rolo sensorial',
       preco: 9.00,
       imagem: 'rolo_sensorial.png',
-      disponivel: true
+      disponivel: false
     },
     {
       referencia: 'LT004',
       nome: 'Cotonetes propriocetivos (Pack 30)',
       preco: 3.00,
       imagem: 'cotonete_propriocetivos.jpeg',
-      disponivel: true
+      disponivel: false
     },
     {
       referencia: 'LT025',
       nome: 'Tubo Ressonância',
       preco: 0,
       imagem: 'tubo_ressonancia.png',
-      disponivel: true
+      disponivel: false
     },
     {
       referencia: 'LT011',
       nome: 'Guias Linguais (Kit 4)',
       preco: 5.50,
       imagem: 'guias_linguais.jpeg',
-      disponivel: true
+      disponivel: false
     },
     {
       referencia: 'LT018',
       nome: 'Rolo de Crioterapia',
       preco: 9.00,
       imagem: 'rolo_crioterapia.png',
-      disponivel: true
+      disponivel: false
     },
     {
       referencia: 'LT022',
       nome: 'Sugador de Lingua',
       preco: 6.00,
       imagem: 'sugador_lingua.png',
-      disponivel: true
+      disponivel: false
     }
   ]
 };

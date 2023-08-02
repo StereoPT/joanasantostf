@@ -117,13 +117,6 @@ export const mof = {
       new: 'Novo'
     },
     {
-      referencia: 'LT028',
-      nome: 'Ventosas faciais (Kit 2)',
-      preco: 4.00,
-      imagem: 'ventosas_faciais.jpeg',
-      disponivel: false,
-    },
-    {
       referencia: 'LT010',
       nome: 'Exercitador de língua (Kit 3 Peças)',
       preco: 19.99,
@@ -153,13 +146,6 @@ export const mof = {
       disponivel: false
     },
     {
-      referencia: 'LT007',
-      nome: 'Escova propriocetiva',
-      preco: 6.00,
-      imagem: 'escova_propriocetiva.png',
-      disponivel: false
-    },
-    {
       referencia: 'LT009',
       nome: 'Espelho intra-oral',
       preco: 3.50,
@@ -171,13 +157,6 @@ export const mof = {
       nome: 'Afastador labial (conjunto de 2)',
       preco: 10.00,
       imagem: 'afastador_labial.png',
-      disponivel: false
-    },
-    {
-      referencia: 'LT013',
-      nome: 'Modelo de boca',
-      preco: 10.00,
-      imagem: 'modelo_boca.png',
       disponivel: false
     },
     {
@@ -213,13 +192,6 @@ export const mof = {
       nome: 'Exercitador peri-orbicular (smile)',
       preco: 6.00,
       imagem: 'exercitador_periorbicular.png',
-      disponivel: false
-    },
-    {
-      referencia: 'LT019',
-      nome: 'Rolo facial com vibração',
-      preco: 16.00,
-      imagem: 'rolo_facial_vibracao.png',
       disponivel: false
     },
     {
@@ -269,13 +241,6 @@ export const mof = {
       nome: 'Tubo Ressonância',
       preco: 0,
       imagem: 'tubo_ressonancia.png',
-      disponivel: false
-    },
-    {
-      referencia: 'LT011',
-      nome: 'Guias Linguais (Kit 4)',
-      preco: 5.50,
-      imagem: 'guias_linguais.jpeg',
       disponivel: false
     },
     {

@@ -39,42 +39,101 @@ export const mof = {
       nome: 'Detergente desinfetante, fungicida, batericida (1L)',
       preco: 15.00,
       imagem: 'detergente_desinfetante.jpeg',
-      disponivel: false,
-      new: 'Novo'
+      disponivel: false
     },
     {
       referencia: 'LT035',
       nome: 'Super desinfetante sem enxaguamento (1L)',
       preco: 18.00,
       imagem: 'super_desinfetante.jpeg',
-      disponivel: false,
-      new: 'Novo'
+      disponivel: false
     }
   ],
   mof: [
+    {
+      referencia: 'LT036',
+      nome: 'Seringas 10ml (pack 5)',
+      preco: 5.00,
+      imagem: 'seringas.jpeg',
+      disponivel: true,
+      new: 'Novo',
+    },
+    {
+      referencia: 'LT037',
+      nome: 'Ventosa Facial Blue M',
+      preco: 9.00,
+      imagem: 'ventosa_facial_m.jpeg',
+      disponivel: true,
+      new: 'Novo',
+    },
+    {
+      referencia: 'LT038',
+      nome: 'Ventosa Facial Blue S',
+      preco: 9.00,
+      imagem: 'ventosa_facial_s.jpeg',
+      disponivel: true,
+      new: 'Novo',
+    },
+    {
+      referencia: 'LT039',
+      nome: 'Inspirómetro de Incentivo',
+      preco: 10.00,
+      imagem: 'inspimometro.jpeg',
+      disponivel: true,
+      new: 'Novo',
+    },
+    {
+      referencia: 'LT040',
+      nome: 'Exercitador labial strong',
+      preco: 8.50,
+      imagem: 'exercitador_labial_strong.jpeg',
+      disponivel: true,
+      new: 'Novo',
+    },
+    {
+      referencia: 'LT041',
+      nome: 'Espátulas Plástico Coloridas (pack 5)',
+      preco: 4.00,
+      imagem: 'espatulas_coloridas.jpeg',
+      disponivel: true,
+      new: 'Novo',
+    },
+    {
+      referencia: 'LT042',
+      nome: 'Medidor Fluxo Expiratório',
+      preco: 12.00,
+      imagem: 'medidor_fluxo_expiratorio.jpeg',
+      disponivel: true,
+      new: 'Novo',
+    },
+    {
+      referencia: 'LT043',
+      nome: 'Tape infantil noturno (pack 30)',
+      preco: 7.00,
+      imagem: 'tape_infantil.jpeg',
+      disponivel: true,
+      new: 'Novo',
+    },
     {
       referencia: 'LT029',
       nome: 'Palhinha divertida (Óculos)',
       preco: 4.50,
       imagem: 'palhinha_divertida.jpeg',
-      disponivel: true,
-      new: 'Novo'
+      disponivel: true
     },
     {
       referencia: 'LT030',
       nome: 'Tape elástica transparente (Pack 20)',
       preco: 5.00,
       imagem: 'tape_elastica.jpg',
-      disponivel: false,
-      new: 'Novo'
+      disponivel: false
     },
     {
       referencia: 'LT031',
       nome: 'Ventosa facial S/M/L (Kit 3)',
       preco: 20.00,
       imagem: 'ventosa_facial_kit.jpeg',
-      disponivel: true,
-      new: 'Novo'
+      disponivel: true
     },
     {
       referencia: 'LT032',
@@ -97,24 +156,21 @@ export const mof = {
       nome: 'Estimulador facial e intra-oral',
       preco: 17.00,
       imagem: 'estimulador_facial_intra-oral.jpeg',
-      disponivel: true,
-      new: 'Novo'
+      disponivel: true
     },
     {
       referencia: 'LT026',
       nome: 'Lollipop intra-oral',
       preco: 10.00,
       imagem: 'lollipop_intra-oral.jpeg',
-      disponivel: true,
-      new: 'Novo'
+      disponivel: true
     },
     {
       referencia: 'LT027',
       nome: 'Tubinhos mastigatorios (Kit 2)',
       preco: 8.00,
       imagem: 'tubinhos_mastigatorios.jpeg',
-      disponivel: false,
-      new: 'Novo'
+      disponivel: false
     },
     {
       referencia: 'LT010',

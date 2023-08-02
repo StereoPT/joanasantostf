@@ -57,7 +57,7 @@ export const mof = {
       nome: 'Palhinha divertida (Óculos)',
       preco: 4.50,
       imagem: 'palhinha_divertida.jpeg',
-      disponivel: false,
+      disponivel: true,
       new: 'Novo'
     },
     {
@@ -73,7 +73,7 @@ export const mof = {
       nome: 'Ventosa facial S/M/L (Kit 3)',
       preco: 20.00,
       imagem: 'ventosa_facial_kit.jpeg',
-      disponivel: false,
+      disponivel: true,
       new: 'Novo'
     },
     {
@@ -81,7 +81,7 @@ export const mof = {
       nome: 'Tubo de ressonância em silicone (Kit 2)',
       preco: 5.00,
       imagem: 'tubo_ressonancia_kit.jpeg',
-      disponivel: false,
+      disponivel: true,
       new: 'Mais Vendido'
     },
     {
@@ -89,7 +89,7 @@ export const mof = {
       nome: 'Sticks dentários infantil (Pack 30)',
       preco: 4.00,
       imagem: 'sticks_dentarios.jpeg',
-      disponivel: false,
+      disponivel: true,
       new: 'Mais Vendido'
     },
     {
@@ -97,7 +97,7 @@ export const mof = {
       nome: 'Estimulador facial e intra-oral',
       preco: 17.00,
       imagem: 'estimulador_facial_intra-oral.jpeg',
-      disponivel: false,
+      disponivel: true,
       new: 'Novo'
     },
     {
@@ -105,7 +105,7 @@ export const mof = {
       nome: 'Lollipop intra-oral',
       preco: 10.00,
       imagem: 'lollipop_intra-oral.jpeg',
-      disponivel: false,
+      disponivel: true,
       new: 'Novo'
     },
     {
@@ -121,7 +121,7 @@ export const mof = {
       nome: 'Exercitador de língua (Kit 3 Peças)',
       preco: 19.99,
       imagem: 'exercitador_lingua.png',
-      disponivel: false,
+      disponivel: true,
       new: 'Mais Vendido'
     },
     {
@@ -129,14 +129,14 @@ export const mof = {
       nome: 'Exercitador facial (cogumelo)',
       preco: 6.50,
       imagem: 'cogumelo.png',
-      disponivel: false
+      disponivel: true
     },
     {
       referencia: 'LT012',
       nome: 'Massajador com vibração T',
       preco: 15.00,
       imagem: 'massajador_vibracao.png',
-      disponivel: false
+      disponivel: true
     },
     {
       referencia: 'LT005',
@@ -150,7 +150,7 @@ export const mof = {
       nome: 'Espelho intra-oral',
       preco: 3.50,
       imagem: 'espelho_intraoral.png',
-      disponivel: false
+      disponivel: true
     },
     {
       referencia: 'LT001',
@@ -164,14 +164,14 @@ export const mof = {
       nome: 'Neckline',
       preco: 15.00,
       imagem: 'neckline.png',
-      disponivel: false
+      disponivel: true
     },
     {
       referencia: 'LT002',
       nome: 'Cachimbo de sopro',
       preco: 2.75,
       imagem: 'cachimbo_sopro.png',
-      disponivel: false
+      disponivel: true
     },
     {
       referencia: 'LT008',
@@ -185,7 +185,7 @@ export const mof = {
       nome: 'Pipetas (Pack 20)',
       preco: 4.20,
       imagem: 'pipetas.png',
-      disponivel: false
+      disponivel: true
     },
     {
       referencia: 'LT021',
@@ -199,28 +199,28 @@ export const mof = {
       nome: 'Modelo de língua',
       preco: 6.75,
       imagem: 'modelo_lingua.png',
-      disponivel: false
+      disponivel: true
     },
     {
       referencia: 'LT023',
       nome: 'Swabs - Esponjas (Pack 20)',
       preco: 5.00,
       imagem: 'swabs.png',
-      disponivel: false
+      disponivel: true
     },
     {
       referencia: 'LT016',
       nome: 'Oxímetro',
       preco: 20.00,
       imagem: 'oximetro.png',
-      disponivel: false
+      disponivel: true
     },
     {
       referencia: 'LT006',
       nome: 'Elásticos Ortodontia',
       preco: 4.00,
       imagem: 'elasticos_ortodontia.png',
-      disponivel: false
+      disponivel: true
     },
     {
       referencia: 'LT020',
@@ -234,14 +234,14 @@ export const mof = {
       nome: 'Cotonetes propriocetivos (Pack 30)',
       preco: 3.00,
       imagem: 'cotonete_propriocetivos.jpeg',
-      disponivel: false
+      disponivel: true
     },
     {
       referencia: 'LT025',
       nome: 'Tubo Ressonância',
       preco: 0,
       imagem: 'tubo_ressonancia.png',
-      disponivel: false
+      disponivel: true
     },
     {
       referencia: 'LT018',

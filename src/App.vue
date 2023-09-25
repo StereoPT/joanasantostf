@@ -60,13 +60,6 @@
           :label="'Marcações'"
         />
       </q-list>
-      <q-item class="col-grow" />
-      <q-item-label header dense>Parcerias</q-item-label>
-      <SidebarItem
-        :url="'https://www.instagram.com/doworkwear'"
-        :icon="'dry_cleaning'"
-        :label="'Dô Workwear'"
-      />
     </q-drawer>
 
     <q-page-container>

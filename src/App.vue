@@ -36,21 +36,7 @@
             color="white"
             icon="call"
             href="tel:926398174"
-            class="q-mr-xl"
           />
-
-          <q-btn
-            flat
-            round
-            padding="sm"
-            color="white"
-            icon="shopping_cart"
-            :to="{ name: 'carrinho' }"
-          >
-            <q-badge v-if="cartAmount" color="red" floating rounded>{{
-              cartAmount
-            }}</q-badge>
-          </q-btn>
         </div>
       </q-toolbar>
     </q-header>
@@ -72,11 +58,6 @@
           :link="{ name: 'marcacoes' }"
           :icon="'calendar_month'"
           :label="'Marcações'"
-        />
-        <SidebarItem
-          :link="{ name: 'loja' }"
-          :icon="'shopping_cart'"
-          :label="'Loja'"
         />
       </q-list>
       <q-item class="col-grow" />

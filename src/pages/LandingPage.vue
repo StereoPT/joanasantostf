@@ -46,7 +46,7 @@
       </div>
     </div>
     <div class="row q-mb-xl justify-center">
-      <div class="col-12 q-pa-md">
+      <div class="col-xs-12 col-sm-8 col-md-6 q-pa-md">
         <h4 class="text-bold text-primary q-mb-sm">A nossa equipa:</h4>
         <q-carousel
           v-model="slide"
@@ -55,72 +55,53 @@
           animated
           swipeable
           infinite
+          arrows
           navigation
           padding
           control-color="primary"
           class="rounded-borders"
           style="height: 540px"
         >
-          <q-carousel-slide name="1" class="column no-wrap">
-            <div
-              class="row fit justify-start items-center q-gutter-md q-col-gutter no-wrap"
-            >
-              <q-img
-                class="rounded-borders col-xs-12 col-sm-6"
-                src="img/team/1.png"
-              />
-              <q-img
-                class="rounded-borders col-xs-12 col-sm-6"
-                src="img/team/2.png"
-              >
-              </q-img>
-            </div>
-          </q-carousel-slide>
-          <q-carousel-slide name="2" class="column no-wrap">
-            <div
-              class="row fit justify-start items-center q-gutter-md q-col-gutter no-wrap"
-            >
-              <q-img
-                class="rounded-borders col-xs-12 col-sm-6"
-                src="img/team/3.png"
-              />
-              <q-img
-                class="rounded-borders col-xs-12 col-sm-6"
-                src="img/team/4.png"
-              >
-              </q-img>
-            </div>
-          </q-carousel-slide>
-          <q-carousel-slide name="3" class="column no-wrap">
-            <div
-              class="row fit justify-start items-center q-gutter-md q-col-gutter no-wrap"
-            >
-              <q-img
-                class="rounded-borders col-xs-12 col-sm-6"
-                src="img/team/5.png"
-              />
-              <q-img
-                class="rounded-borders col-xs-12 col-sm-6"
-                src="img/team/6.png"
-              >
-              </q-img>
-            </div>
-          </q-carousel-slide>
-          <q-carousel-slide name="4" class="column no-wrap">
-            <div
-              class="row fit justify-start items-center q-gutter-md q-col-gutter no-wrap"
-            >
-              <q-img
-                class="rounded-borders col-xs-12 col-sm-6"
-                src="img/team/7.png"
-              />
-              <q-img
-                class="rounded-borders col-xs-12 col-sm-6"
-                src="img/team/8.png"
-              >
-              </q-img>
-            </div>
-          </q-carousel-slide>
+          <q-carousel-slide
+            name="1"
+            img-src="img/team/1.png"
+            style="background-size: contain; background-repeat: no-repeat"
+          />
+          <q-carousel-slide
+            name="2"
+            img-src="img/team/2.png"
+            style="background-size: contain; background-repeat: no-repeat"
+          />
+          <q-carousel-slide
+            name="3"
+            img-src="img/team/3.png"
+            style="background-size: contain; background-repeat: no-repeat"
+          />
+          <q-carousel-slide
+            name="4"
+            img-src="img/team/4.png"
+            style="background-size: contain; background-repeat: no-repeat"
+          />
+          <q-carousel-slide
+            name="5"
+            img-src="img/team/5.png"
+            style="background-size: contain; background-repeat: no-repeat"
+          />
+          <q-carousel-slide
+            name="6"
+            img-src="img/team/6.png"
+            style="background-size: contain; background-repeat: no-repeat"
+          />
+          <q-carousel-slide
+            name="7"
+            img-src="img/team/7.png"
+            style="background-size: contain; background-repeat: no-repeat"
+          />
+          <q-carousel-slide
+            name="8"
+            img-src="img/team/8.png"
+            style="background-size: contain; background-repeat: no-repeat"
+          />
         </q-carousel>
       </div>
     </div>

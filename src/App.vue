@@ -5,10 +5,7 @@
         <q-btn dense flat round icon="menu" @click="toggleDrawer" />
 
         <q-toolbar-title class="gt-xs">
-          <!-- <q-avatar>
-            Add Brand Logo Here
-          </q-avatar> -->
-          Joana Santos<span> - Terapeuta da Fala</span>
+          Consultório Dra. Joana Santos - Monte Real
         </q-toolbar-title>
 
         <div class="q-gutter-md">

@@ -52,9 +52,34 @@
           :label="'Inicio'"
         />
         <SidebarItem
-          :link="{ name: 'marcacoes' }"
+          :url="'https://forms.gle/WBz3ydgtHYb4qKUbA'"
           :icon="'calendar_month'"
-          :label="'Marcações'"
+          :label="'Consultas'"
+        />
+        <SidebarItem
+          :url="'https://forms.gle/pEgHsANhjV3BaiL4A'"
+          :icon="'school'"
+          :label="'Mentorias/Supervisão'"
+        />
+        <SidebarItem
+          :disable="true"
+          :icon="'star'"
+          :label="'Curso Super MOF'"
+        />
+        <SidebarItem
+          :url="'https://forms.gle/FSYA4XwxCvBhhe6t7'"
+          :icon="'change_history'"
+          :label="'Protocolo Pirâmide'"
+        />
+        <SidebarItem
+          :url="'https://forms.gle/ZaWRbCcfpGTuUyUt5'"
+          :icon="'menu_book'"
+          :label="'Livro Introdução Alimentar'"
+        />
+        <SidebarItem
+          :disable="true"
+          :icon="'takeout_dining'"
+          :label="'Kit Super MOF'"
         />
       </q-list>
     </q-drawer>

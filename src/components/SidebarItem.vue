@@ -1,7 +1,16 @@
 <template>
-  <q-item class="q-py-md inactive-link" active-class="active-link"
-    clickable v-ripple dense exact
-    :to="link" :href="url" :target="url ? '_blank' : ''">
+  <q-item
+    class="q-py-md inactive-link"
+    active-class="active-link"
+    :clickable="!disable"
+    v-ripple="!disable"
+    dense
+    exact
+    :disable="disable"
+    :to="link"
+    :href="url"
+    :target="url ? '_blank' : ''"
+  >
     <q-item-section avatar>
       <q-icon :name="icon" />
     </q-item-section>
@@ -11,22 +20,23 @@
 
 <script>
 export default {
-  name: 'SidebarItem',
+  name: "SidebarItem",
   props: {
     link: null,
     icon: String,
     label: String,
-    url: null
-  }
-}
+    url: null,
+    disable: Boolean,
+  },
+};
 </script>
 
 <style scoped>
-  .inactive-link {
-    color: #6A5062;
-  }
-  .active-link {
-    color: white;
-    background: #6A5062;
-  }
+.inactive-link {
+  color: #6a5062;
+}
+.active-link {
+  color: white;
+  background: #6a5062;
+}
 </style>

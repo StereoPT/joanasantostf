@@ -2,7 +2,7 @@
   <q-page>
     <TopBanner />
     <div class="row q-mb-xl q-mx-xl justify-center">
-      <div class="col-md-6 flex justify-center items-center">
+      <div class="col-xs-12 col-md-6 flex justify-center items-center">
         <q-img
           class="q-mt-sm"
           src="img/sobremim.png"
@@ -11,7 +11,7 @@
           style="width: 75%"
         />
       </div>
-      <div class="col-md-6">
+      <div class="col-xs-12 col-md-6">
         <h4 class="text-bold text-primary q-mb-sm">Sobre mim:</h4>
         <ul class="q-px-sm" style="font-size: 1.15em; list-style-type: none">
           <li class="q-pt-md">

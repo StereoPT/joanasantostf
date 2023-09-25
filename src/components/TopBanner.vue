@@ -10,9 +10,7 @@
       img-class="banner-img"
     />
     <div class="row justify-center q-mt-md">
-      <div
-        class="responsive-text col-xs-12 col-sm-6 col-md-4 col-lg-4 text-center"
-      >
+      <div class="responsive-text col-xs-12 col-sm-6 col-md-5 text-center">
         <h4 class="text-weight-bold q-mb-sm text-primary">
           Consultório Monte Real
         </h4>

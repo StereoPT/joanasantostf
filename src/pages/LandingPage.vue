@@ -45,6 +45,85 @@
         </ul>
       </div>
     </div>
+    <div class="row q-mb-xl justify-center">
+      <div class="col-12 q-pa-md">
+        <h4 class="text-bold text-primary q-mb-sm">A nossa equipa:</h4>
+        <q-carousel
+          v-model="slide"
+          transition-prev="slide-right"
+          transition-next="slide-left"
+          animated
+          swipeable
+          infinite
+          navigation
+          padding
+          control-color="primary"
+          class="rounded-borders"
+          style="height: 540px"
+        >
+          <q-carousel-slide name="1" class="column no-wrap">
+            <div
+              class="row fit justify-start items-center q-gutter-md q-col-gutter no-wrap"
+            >
+              <q-img
+                class="rounded-borders col-xs-12 col-sm-6"
+                src="img/team/1.png"
+              />
+              <q-img
+                class="rounded-borders col-xs-12 col-sm-6"
+                src="img/team/2.png"
+              >
+              </q-img>
+            </div>
+          </q-carousel-slide>
+          <q-carousel-slide name="2" class="column no-wrap">
+            <div
+              class="row fit justify-start items-center q-gutter-md q-col-gutter no-wrap"
+            >
+              <q-img
+                class="rounded-borders col-xs-12 col-sm-6"
+                src="img/team/3.png"
+              />
+              <q-img
+                class="rounded-borders col-xs-12 col-sm-6"
+                src="img/team/4.png"
+              >
+              </q-img>
+            </div>
+          </q-carousel-slide>
+          <q-carousel-slide name="3" class="column no-wrap">
+            <div
+              class="row fit justify-start items-center q-gutter-md q-col-gutter no-wrap"
+            >
+              <q-img
+                class="rounded-borders col-xs-12 col-sm-6"
+                src="img/team/5.png"
+              />
+              <q-img
+                class="rounded-borders col-xs-12 col-sm-6"
+                src="img/team/6.png"
+              >
+              </q-img>
+            </div>
+          </q-carousel-slide>
+          <q-carousel-slide name="4" class="column no-wrap">
+            <div
+              class="row fit justify-start items-center q-gutter-md q-col-gutter no-wrap"
+            >
+              <q-img
+                class="rounded-borders col-xs-12 col-sm-6"
+                src="img/team/7.png"
+              />
+              <q-img
+                class="rounded-borders col-xs-12 col-sm-6"
+                src="img/team/8.png"
+              >
+              </q-img>
+            </div>
+          </q-carousel-slide>
+        </q-carousel>
+      </div>
+    </div>
   </q-page>
 </template>
 
@@ -54,6 +133,11 @@ import TopBanner from "../components/TopBanner.vue";
 export default {
   name: "LandingPage",
   title: "Joana Santos - Página Inicial",
+  data() {
+    return {
+      slide: "1",
+    };
+  },
   components: {
     TopBanner,
   },

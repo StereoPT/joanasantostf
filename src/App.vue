@@ -67,6 +67,11 @@
           :label="'Curso Super MOF'"
         />
         <SidebarItem
+          :url="'https://forms.gle/YooxQfjYNNUPTH826'"
+          :icon="'details'"
+          :label="'Mentoria Pirâmide'"
+        />
+        <SidebarItem
           :url="'https://forms.gle/FSYA4XwxCvBhhe6t7'"
           :icon="'change_history'"
           :label="'Protocolo Pirâmide'"

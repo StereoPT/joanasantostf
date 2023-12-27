@@ -67,6 +67,11 @@
           :label="'Curso Super MOF'"
         />
         <SidebarItem
+          :url="'https://forms.gle/VQq5peRnE7UUZv8t7'"
+          :icon="'class'"
+          :label="'Mentoria Sigmatismo'"
+        />
+        <SidebarItem
           :url="'https://forms.gle/YooxQfjYNNUPTH826'"
           :icon="'details'"
           :label="'Mentoria Pirâmide'"

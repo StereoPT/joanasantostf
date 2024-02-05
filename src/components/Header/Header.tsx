@@ -11,15 +11,9 @@ import HeaderLogo from './HeaderLogo';
 import HeaderLink from './HeaderItem';
 import HeaderMenuItem from './HeaderMenuItem';
 
-const Header = () => {
-  const menuItems = [
-    { id: 'home', label: 'Home', href: '#' },
-    { id: 'about', label: 'About Me', href: '#' },
-    { id: 'services', label: 'Services', href: '#' },
-    { id: 'team', label: 'Team', href: '#' },
-    { id: 'contact', label: 'Contact', href: '#' },
-  ];
+import { NAV_ITEMS } from '@/constants';
 
+const Header = () => {
   return (
     <Navbar>
       <NavbarContent className="sm:hidden" justify="start">
@@ -34,7 +28,7 @@ const Header = () => {
         className="hidden sm:flex sm:flex-1 gap-4"
         justify="center">
         <HeaderLogo />
-        {menuItems.map((item) => (
+        {NAV_ITEMS.map((item) => (
           <HeaderLink key={item.id} item={item} />
         ))}
       </NavbarContent>
@@ -42,7 +36,7 @@ const Header = () => {
       <NavbarContent className="sm:hidden" justify="end" />
 
       <NavbarMenu>
-        {menuItems.map((item) => (
+        {NAV_ITEMS.map((item) => (
           <HeaderMenuItem key={item.id} item={item} />
         ))}
       </NavbarMenu>

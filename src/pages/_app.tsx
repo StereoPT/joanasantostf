@@ -2,16 +2,18 @@ import { NextUIProvider } from '@nextui-org/system';
 
 import '@/styles/globals.css';
 
-import type { AppProps } from 'next/app';
 import Head from 'next/head';
+import { AppPropsWithLayout } from '@/types/global';
 
-const App = ({ Component, pageProps }: AppProps) => {
+const App = ({ Component, pageProps }: AppPropsWithLayout) => {
+  const getLayout = Component.getLayout ?? ((page) => page);
+
   return (
     <NextUIProvider>
       <Head>
         <title>Dra. Joana Santos</title>
       </Head>
-      <Component {...pageProps} />
+      {getLayout(<Component {...pageProps} />)}
     </NextUIProvider>
   );
 };

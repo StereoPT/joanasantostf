@@ -1,15 +1,16 @@
 import AboutMe from '@/components/AboutMe/AboutMe';
 import Contact from '@/components/Contact/Contact';
 import Footer from '@/components/Footer/Footer';
-import Header from '@/components/Header/Header';
 import Hero from '@/components/Hero/Hero';
 import Services from '@/components/Services/Services';
 import Team from '@/components/Team/Team';
+import Layout from '@/layout/Layout';
+import { NextPageWithLayout } from '@/types/global';
+import { ReactElement } from 'react';
 
-const LandingPage = () => {
+const LandingPage: NextPageWithLayout = () => {
   return (
     <main>
-      <Header />
       <Hero />
       <AboutMe />
       <Services />
@@ -18,6 +19,10 @@ const LandingPage = () => {
       <Footer />
     </main>
   );
+};
+
+LandingPage.getLayout = (page: ReactElement) => {
+  return <Layout>{page}</Layout>;
 };
 
 export default LandingPage;

@@ -1,3 +1,5 @@
+import { ReactElement } from 'react';
+
 import AboutMe from '@/components/AboutMe/AboutMe';
 import Contact from '@/components/Contact/Contact';
 import Footer from '@/components/Footer/Footer';
@@ -6,7 +8,6 @@ import Services from '@/components/Services/Services';
 import Team from '@/components/Team/Team';
 import Layout from '@/layout/Layout';
 import { NextPageWithLayout } from '@/types/global';
-import { ReactElement } from 'react';
 
 const LandingPage: NextPageWithLayout = () => {
   return (

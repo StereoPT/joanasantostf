@@ -1,19 +1,24 @@
 import React from 'react';
 
 import {
-  Image,
-  Link,
   Navbar,
-  NavbarBrand,
   NavbarContent,
-  NavbarItem,
   NavbarMenu,
-  NavbarMenuItem,
   NavbarMenuToggle,
 } from '@nextui-org/react';
 
+import HeaderLogo from './HeaderLogo';
+import HeaderLink from './HeaderItem';
+import HeaderMenuItem from './HeaderMenuItem';
+
 const Header = () => {
-  const menuItems = ['Hero', 'About Me', 'Services', 'Team', 'Contact'];
+  const menuItems = [
+    { id: 'home', label: 'Home', href: '#' },
+    { id: 'about', label: 'About Me', href: '#' },
+    { id: 'services', label: 'Services', href: '#' },
+    { id: 'team', label: 'Team', href: '#' },
+    { id: 'contact', label: 'Contact', href: '#' },
+  ];
 
   return (
     <Navbar>
@@ -22,37 +27,23 @@ const Header = () => {
       </NavbarContent>
 
       <NavbarContent className="sm:hidden pr-3" justify="center">
-        <NavbarBrand>
-          <Image width={54} alt="CT Logo" src="logo.jpg" />
-          <p className="font-bold text-inherit">CT</p>
-        </NavbarBrand>
+        <HeaderLogo />
       </NavbarContent>
 
       <NavbarContent
         className="hidden sm:flex sm:flex-1 gap-4"
         justify="center">
-        <NavbarBrand>
-          <Image width={54} alt="CT Logo" src="logo.jpg" />
-          <p className="font-bold text-inherit">CT</p>
-        </NavbarBrand>
-        {menuItems.map((item, index) => (
-          <NavbarItem key={`${item}-${index}`}>
-            <Link color="foreground" href="#">
-              {item}
-            </Link>
-          </NavbarItem>
+        <HeaderLogo />
+        {menuItems.map((item) => (
+          <HeaderLink key={item.id} item={item} />
         ))}
       </NavbarContent>
 
       <NavbarContent className="sm:hidden" justify="end" />
 
       <NavbarMenu>
-        {menuItems.map((item, index) => (
-          <NavbarMenuItem key={`${item}-${index}`}>
-            <Link className="w-full" color="foreground" href="#" size="lg">
-              {item}
-            </Link>
-          </NavbarMenuItem>
+        {menuItems.map((item) => (
+          <HeaderMenuItem key={item.id} item={item} />
         ))}
       </NavbarMenu>
     </Navbar>
